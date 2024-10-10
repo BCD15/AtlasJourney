@@ -6,6 +6,7 @@ function Send() {
     var date = document.querySelector('#date').value;
     var email = document.querySelector('#email').value;
     var password = document.querySelector('#password').value;
+    var cPassword = document.querySelector('#cPassword').value;
 
     const account = {
         name : name,
@@ -35,6 +36,9 @@ function Send() {
     } else {
         if (!name || !sName || !cpf || !country || !date || !email || !password) {
             alert('Por favor preencha todos os campos')
+            return
+        } else if (password !== cPassword) {
+            alert('As senhas informadas não correspondem ')
             return
         } else {
             if(localStorage.getItem("accounts") === null) {
