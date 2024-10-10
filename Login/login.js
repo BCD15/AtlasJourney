@@ -18,14 +18,12 @@ function Send() {
             return
         } else {
             const accounts = JSON.parse(localStorage.getItem("accounts"))
+            const accountExists = accounts.some(account => account.name === name && account.email === email && account.password === password);
 
-            for (let i = 0; i < accounts.length; i++) {
-                if(accounts[i].name != name || accounts[i].email != email || accounts[i].password != password) {
-                    alert('Usuário não existente')
-                    return
-                } else {
-                    window.location='../Home/index.html'
-                }
+            if(accountExists) {
+                window.location='../Home/index.html'
+            } else {
+                alert('Usuário não existente')
             }
         }
     }
