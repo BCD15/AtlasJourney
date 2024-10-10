@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cadastro.css">
+    <script src="cadastro.js"></script>
     <title>Cadastro</title>
 </head>
 <body>
     <main>
         <div id="left-content">
-            <input type="text" placeholder="  Nome" style="width: 250px;">
-            <input type="text" placeholder="  Sobrenome" style="width: 250px;">
-            <input type="number" placeholder="  CPF" style="width: 250px;">
-            <input type="text" placeholder="  País" style="width: 250px;">
-            <input type="text" onfocus="(this.type='date')" placeholder="  Data de Nascimento" style="width: 250px;">
+            <input id="name" type="text" placeholder="  Nome" style="width: 250px;">
+            <input id="sName" type="text" placeholder="  Sobrenome" style="width: 250px;">
+            <input id="cpf" type="number" placeholder="  CPF" style="width: 250px;">
+            <input id="country" type="text" placeholder="  País" style="width: 250px;">
+            <input id="date" type="text" onfocus="(this.type='date')" placeholder="  Data de Nascimento" style="width: 250px;">
         </div>
         <div id="right-content">
-            <input type="email" placeholder="  Email" style="width: 250px;">
-            <input type="password" placeholder="  Senha" style="width: 250px;">
-            <input type="password" placeholder="  Confirmar senha" style="width: 250px;">
+            <input id="email" type="email" placeholder="  Email" style="width: 250px;">
+            <input id="password" type="password" placeholder="  Senha" style="width: 250px;">
+            <input id="cPassword" type="password" placeholder="  Confirmar senha" style="width: 250px;">
             <button onclick="window.location='../Home/index.html'" style="display: flex; flex-direction: row; justify-content: space-evenly;">
                 <img src="images/google 1.png" width="23px" height="23px" style="margin: 3px; margin-left: -30px;">
                 <p style="margin: 7px; color: #FFFFFF;">Faça login com Google</p>
@@ -30,7 +31,7 @@
         </div>
         <div id="bottom-content">
             <div style="margin-bottom: 12px;">
-                <button id="sendButton" onclick="window.location='../Home/index.html'">
+                <button id="sendButton" onclick="Send()">
                     <span></span>
                     <p style="margin: 4px; margin-left: 16px;">Enviar</p>
                     <img src="images/right-arrow 1.png" width="21px" height="21px" style="margin: 3px;">
