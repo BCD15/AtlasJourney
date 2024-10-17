@@ -1,0 +1,127 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+    
+}
+.icon{
+    padding-right: 40%;
+}
+header{
+    background-color: #DBE8FF;
+}
+.nav1{
+    align-items: center;
+    display: flex;
+    padding:10px
+
+}
+.interação{
+    background-color: #BFB8FF;
+    color: #A47ADA ;
+    
+}
+.barraNavegacao{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding:5px;
+    
+} 
+.lupa{
+    padding-left: 700px;
+}
+li{
+    padding-right: 120px;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.assineOferta{
+    background-color: #BFB8FF;
+    color: #A47ADA ;
+    margin-top: 10px;
+    padding: 30px;
+    text-align: center;
+}
+input{
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px; 
+    outline: none;
+    transition: border 0.3s;
+    
+}
+button{
+
+    padding: 10px;
+    margin: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color:#A47ADA;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem de linha, se necessário */
+    gap: 20px; /* Espaçamento entre os cards */
+    justify-content: center; /* Alinha os cards no centro */
+    padding: 20px; /* Espaçamento ao redor do contêiner */
+}
+
+
+.card {
+    color: #A47ADA;
+    background-color: #DBE8FF ;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    width: 300px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+}
+
+.card-description {
+    font-size: 1em;
+    color:"#A47ADA";
+    margin-bottom: 20px;
+}
+.card-button {
+    color: black;
+}
+.promocao {
+    display:inline-block;
+    padding: 10px 20px;
+    background-color: #800080; /* Cor roxa */
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+
+}
+
+
