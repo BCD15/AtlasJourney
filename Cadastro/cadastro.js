@@ -1,3 +1,7 @@
+function Login() {
+    sessionStorage.setItem("isLoggedin", 1)
+}
+
 function Send() {
     var name = document.querySelector('#name').value;
     var sName = document.querySelector('#sName').value;
@@ -32,6 +36,7 @@ function Send() {
 
             localStorage.setItem("accounts", JSON.stringify([...JSON.parse(localStorage.getItem("accounts")), account,]));
         }
+        Login()
         window.location='../Home/index.html'
     } else {
         if (!name || !sName || !cpf || !country || !date || !email || !password) {
@@ -56,6 +61,7 @@ function Send() {
                 localStorage.setItem("accounts", JSON.stringify([...JSON.parse(localStorage.getItem("accounts")), account,]));
             }
         }
+        Login()
         window.location='../Home/index.html';
     }
 }

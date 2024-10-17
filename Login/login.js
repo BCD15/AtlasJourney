@@ -5,12 +5,17 @@ function handle(e){
     }
 }
 
+function Login() {
+    sessionStorage.setItem("isLoggedin", 1)
+}
+
 function Send() {
     var name = document.querySelector('#name').value;
     var email = document.querySelector('#email').value;
     var password = document.querySelector('#password').value;
 
     if(name == "admin") {
+        Login()
         window.location='../Home/index.html'
     } else {
         if (!name || !email || !password) {
@@ -21,6 +26,7 @@ function Send() {
             const accountExists = accounts.some(account => account.name === name && account.email === email && account.password === password);
 
             if(accountExists) {
+                Login()
                 window.location='../Home/index.html'
             } else {
                 alert('Usuário não existente')
