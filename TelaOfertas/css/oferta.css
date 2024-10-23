@@ -2,41 +2,33 @@
     margin: 0%;
     padding: 0%;
     font-family: sans-serif;
-    
+}    
+.atlas{
+    margin:auto
 }
-.icon{
-    padding-right: 40%;
+.perfil{
+margin: 15px;
+ 
 }
-header{
-    background-color: #DBE8FF;
+.cabeça{
+background-color: #DBE8FF;
+align-items: center;
+display: flex;
+ 
+ 
 }
-.nav1{
-    align-items: center;
-    display: flex;
-    padding:10px
-
+.navbar{
+background-color:#BFB8FF ;
+color: #A47ADA;
+display: flex;
+padding-block: 5px;
+font-family: "Inter", sans-serif;
+font-size: larger;
+ 
 }
-.interação{
-    background-color: #BFB8FF;
-    color: #A47ADA ;
-    
-}
-.barraNavegacao{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    padding:5px;
-    
-} 
 .lupa{
-    padding-left: 700px;
+    margin-left: 73%;
 }
-li{
-    padding-right: 120px;
-    margin-top: 10px;
-}
-
 a{
     text-decoration: none;
     color: inherit;
@@ -85,7 +77,6 @@ button{
     border-radius: 40px;
     width: 300px;
     overflow: hidden;
-    font-family: Arial, sans-serif;
 }
 
 .card img {
@@ -105,22 +96,35 @@ button{
 .card-description {
     font-size: 1em;
     color:"#A47ADA";
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .card-button {
     color: black;
 }
+.preço{
+    border-top: 2px solid #A47ADA;
+    border-bottom: 2px solid #A47ADA;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+}
+.infos{
+    padding: 7px;
+}
 .promocao {
     display:inline-block;
     padding: 10px 20px;
-    background-color: #800080; /* Cor roxa */
+    background-color: #800080; 
     color: white;
     font-family: Arial, sans-serif;
     font-size: 9px;
     font-weight: bold;
     text-align: center;
-    border-radius: 10px; /* Borda arredondada */
+    border-radius: 10px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    height: 10px;
+    align-items: center;
 
 }
 
