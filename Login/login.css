@@ -56,7 +56,11 @@ main {
 #left-content button {
     background-color: var(--cor4);
     color: var(--cor5);
-    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 94.5%;
+    padding: 0px;
 }
 
 #left-content p, a {
@@ -90,4 +94,15 @@ footer {
     position: absolute;
     bottom: 0;
     box-sizing: border-box;
+}
+
+@media (max-width: 1092px) {
+    #left-content button p {
+        visibility: hidden;
+    }
+
+    #left-content button {
+        padding: 0%;
+
+    }
 }
