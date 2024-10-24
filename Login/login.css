@@ -42,6 +42,13 @@ main {
     box-sizing: border-box; /* Inclui borders na largura */
 }
 
+#loginIcon {
+    background-color: #BFB8FF;
+    width: 25%;
+    height: 20%;
+    border-radius: 40px;
+}
+
 #left-content input, button {
     border: none;
     border-radius: 12px;
@@ -96,13 +103,29 @@ footer {
     box-sizing: border-box;
 }
 
-@media (max-width: 1092px) {
+#telefone-number {
+    font-size: small; font-weight: 700;
+}
+
+@media screen and (max-width: 1092px) {
     #left-content button p {
         visibility: hidden;
     }
 
     #left-content button {
-        padding: 0%;
+        padding: 0.3%;
+        width: 20%;
+        height: 8.5%;
+        border-radius: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 
+    @media screen and (max-width: 1230px) {
+        #loginIcon {
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+        }
     }
 }
