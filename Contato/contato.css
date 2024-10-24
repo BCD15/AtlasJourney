@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --cor1: #55ACE9;
+    --cor2: #DBE8FF;
+    --cor3: #A47ADA;
+    --cor4: #BFB8FF;
+    --cor5: #FFFFFF;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}    
+.atlas{
+    margin:auto
+}
+.perfil{
+margin: 15px;
+ 
+}
+
+.cabeça{
+background-color: var(--cor2);
+align-items: center;
+display: flex;
+height: 100px;
+text-wrap:inherit;
+padding-right: 10px;
+padding-left: 10px;
+ 
+}
+
+.navbar{
+background-color:var(--cor4);
+color: var(--cor3);
+display: flex;
+font-family: "Inter", sans-serif;
+font-size: larger;
+font-display:initial;
+
+}
+
+.lupa{
+margin-left: 73%;
+padding-right: 10px;
+padding-left: 10px;
+
+}
+
+
+#right-content {
+    background-color: var(--cor2);
+    border-radius: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 30%;
+    margin-left: 700px;
+    height: 200px;
+    align-items: center;
+    top: auto;
+    bottom: auto;
+    position: absolute;
+}
+
+input::placeholder {
+    color: var(--cor3);
+}
+
+#bottom-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    color: var(--cor3);
+}
+
+#sendButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--cor3);
+    font-size: large;
+    font-weight: bold;
+    background-color: var(--cor4);
+}
+
+#right-content input {
+    border: none;
+    border-radius: 12px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+input, button {
+    border: none;
+    border-radius: 12px;
+    height: 30px;
+    margin-top: 15px;
+    color: var(--cor3);
+}
+
+#left-content {
+    background-color: var(--cor2);
+    border-radius: 12px;
+    width: 30%;
+    margin-right: 700px;
+    height: 150px;
+}
+
+footer {
+    background-color: var(--cor2);
+    color: var(--cor3);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    box-sizing: border-box;
+}
