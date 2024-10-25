@@ -1,0 +1,131 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}    
+.atlas{
+    margin:auto
+}
+.perfil{
+margin: 15px;
+ 
+}
+.cabeça{
+background-color: #DBE8FF;
+align-items: center;
+display: flex;
+ 
+ 
+}
+.navbar{
+background-color:#BFB8FF ;
+color: #A47ADA;
+display: flex;
+padding-block: 5px;
+font-family: "Inter", sans-serif;
+font-size: larger;
+ 
+}
+.lupa{
+    margin-left: 73%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.assineOferta{
+    background-color: #BFB8FF;
+    color: #A47ADA ;
+    margin-top: 10px;
+    padding: 30px;
+    text-align: center;
+}
+input{
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px; 
+    outline: none;
+    transition: border 0.3s;
+    
+}
+button{
+
+    padding: 10px;
+    margin: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color:#A47ADA;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem de linha, se necessário */
+    gap: 20px; /* Espaçamento entre os cards */
+    justify-content: center; /* Alinha os cards no centro */
+    padding: 20px; /* Espaçamento ao redor do contêiner */
+}
+
+
+.card {
+    color: #A47ADA;
+    background-color: #DBE8FF ;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+}
+
+.card-description {
+    font-size: 1em;
+    color:"#A47ADA";
+    margin-bottom: 10px;
+}
+.card-button {
+    color: black;
+}
+.preço{
+    border-top: 2px solid #A47ADA;
+    border-bottom: 2px solid #A47ADA;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+}
+.infos{
+    padding: 7px;
+}
+.promocao {
+    display:inline-block;
+    padding: 10px 20px;
+    background-color: #800080; 
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    height: 10px;
+    align-items: center;
+
+}
+
+

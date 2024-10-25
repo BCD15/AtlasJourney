@@ -1,0 +1,90 @@
+:root {
+    --cor1: #55ACE9;
+    --cor2: #DBE8FF;
+    --cor3: #A47ADA;
+    --cor4: #BFB8FF;
+    --cor5: #FFFFFF;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+}
+
+#left-content {
+    width: 49%;
+    border-right: solid 3px #55ACE9;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+/* button {
+    background-color: var(--cor4);
+    color: var(--cor5);
+    width: 250px;
+}
+
+input, button {
+    border: none;
+    border-radius: 12px;
+    height: 30px;
+    margin-top: 15px;
+}
+ */
+
+#left-content p, a {
+    color: var(--cor1);
+    text-decoration: none;
+    font-size: small;
+}
+
+#right-content {
+    width: 48.5%;
+    padding: 1px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 13px;
+}
+
+
+/* #bottom-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+} */
+
+#logoDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    border-top: solid 3px #55ACE9;
+}
+
+footer {
+    background-color: var(--cor2);
+    color: var(--cor3);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+}

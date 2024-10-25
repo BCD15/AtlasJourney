@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
     <title>Login</title>
 </head>
 <body>
     <main>
         <div id="left-content">
-            <div style="background-color: #BFB8FF; width: 60px; height: 60px; border-radius: 40px;">
-                <img src="images/user-interface (1) 1.png" alt="" width="60px">
+            <div id="loginIcon">
+                <img src="images/loginIcon.png" width="100%">
             </div>
-            <input type="text" placeholder="  Nome" style="width: 180px; margin-left: 10px; margin-top: 13px;">
-            <input type="email" placeholder="  Email" style="width: 250px;">
-            <input type="password" placeholder="  Senha" style="width: 250px;">
-            <button onclick="" style="display: flex; flex-direction: row; justify-content: space-evenly;">
-                <img src="images/google 1.png" width="23px" height="23px" style="margin: 3px; margin-left: -30px;">
+            <input id="name" type="text" placeholder="  Nome" onkeypress="handle(event)" style="width: 65%; margin-left: 10px; margin-top: 13px;">
+            <input id="email" type="email" placeholder="  Email" onkeypress="handle(event)" style="width: 94.5%;">
+            <input id="password" type="password" placeholder="  Senha" onkeypress="handle(event)" style="width: 94.5%;">
+            <button onclick="window.location='../Home/index.html'" >
+                <img src="images/googleIcon.png" width="23px" height="23px" style="margin: 3px;">
                 <p style="margin: 7px; color: #FFFFFF;">Faça login com Google</p>
             </button>
-            <button style="display: flex; flex-direction: row; justify-content: space-evenly;">
-                <img src="images/facebook (2) 1.png" width="23px" height="23px" style="margin: 3px; margin-left: -21px;">
+            <button onclick="window.location='../Home/index.html'">
+                <img src="images/facebookIcon.png" width="23px" height="23px" style="margin: 3px;">
                 <p style="margin: 7px; color: #FFFFFF;">Faça login com Facebook</p>
             </button>
             <p style="font-weight: 700;">Não possui conta?  <a href="../Cadastro/cadastro.html">clique aqui</a> para criar</p>
         </div>
         <div id="right-content">
-            <img src="images/image.png" width="100%">
+            <img src="images/ilustration.jpg" width="100%" height="100%" style="border-radius: 0px 45px 0px 0px; margin-left: 3px;">
         </div>
         <div id="bottom-content">
             <img src="images/Logo.png"alt="" width="300px">
@@ -34,15 +35,15 @@
     </main>
     <footer>
         <div style="display: flex; flex-direction: row; width: 11%; margin-top: 9px;">
-            <img src="images/instagram (1) 1.png" alt="" width="30px" height="30px" style="margin-right: 10px;">
-            <img src="images/facebook 1.png" alt="" width="30px" height="30px">
+            <img src="images/instagramIconFooter.png" alt="" width="30px" height="30px" style="margin-right: 10px;">
+            <img src="images/facebookIconFooter.png" alt="" width="30px" height="30px">
         </div>
         <div style="display: flex; flex-direction: row; width: 78%; justify-content: center;">
             <p style="font-size: medium; font-weight: bold;">₢ Desenvolvido por "nome do time"</p>
         </div>
         <div style="display: flex; flex-direction: row; width: 11%; justify-content: space-evenly; margin-top: 7px;">
-            <img src="images/telefone 1.png" alt="" width="30px" height="30px">
-            <p style="font-size: small; font-weight: 700;">+55 47 99999999</p>
+            <img src="images/phoneIcon.png" alt="" width="30px" height="30px">
+            <p id="telefone-number" >+55 47 99999999</p>
         </div>
     </footer>
 </body>
