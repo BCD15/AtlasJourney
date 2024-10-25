@@ -21,9 +21,14 @@ margin: 15px;
  
 }
 
+main{
+    padding: 10px;
+    display: flex;
+
+
+}
 .cabeça{
 background-color: var(--cor2);
-align-items: center;
 display: flex;
 height: 100px;
 text-wrap:inherit;
@@ -38,15 +43,13 @@ color: var(--cor3);
 display: flex;
 font-family: "Inter", sans-serif;
 font-size: larger;
-font-display:initial;
-
+font-display: initial;
 }
 
 .lupa{
 margin-left: 73%;
 padding-right: 10px;
 padding-left: 10px;
-
 }
 
 
@@ -54,15 +57,13 @@ padding-left: 10px;
     background-color: var(--cor2);
     border-radius: 45px;
     display: flex;
+    margin-bottom: 10px;
+    border: solid 1px black;
     flex-wrap: wrap;
     flex-direction: row;
     width: 30%;
-    margin-left: 700px;
-    height: 200px;
-    align-items: center;
-    top: auto;
-    bottom: auto;
-    position: absolute;
+    height: 60%;
+    
 }
 
 input::placeholder {
@@ -107,11 +108,19 @@ input, button {
 #left-content {
     background-color: var(--cor2);
     border-radius: 12px;
-    width: 30%;
+    width: 40%;
+    height: 20px;
     margin-right: 700px;
     height: 150px;
-}
+    margin-bottom: 10px;
+    border: solid 1px black;
+    align-items: center;
 
+}
+#img{
+    width: 40%;
+
+}
 footer {
     background-color: var(--cor2);
     color: var(--cor3);
