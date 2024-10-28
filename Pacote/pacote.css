@@ -77,12 +77,22 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 40%;
-    margin-left: 40px;
+    width: 30%;
+    margin-left: 100px;
 }
 
+#texto-direita{
+    display: flex;
+    flex-direction: row;
+}
+
+
 .left-content {
-    margin-left: 3%;
+    margin-left: 7%;
+}
+
+.popup {
+    
 }
 
 .bottom-content {
