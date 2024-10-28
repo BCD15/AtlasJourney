@@ -8,76 +8,139 @@
     --cor5: #FFFFFF;
 }
 
-*{
+* {
     margin: 0%;
     padding: 0%;
     font-family: sans-serif;
-}    
-.atlas{
-    margin:auto
-}
-.perfil{
-margin: 15px;
- 
 }
 
-.cabeça{
-background-color: var(--cor2);
-align-items: center;
-display: flex;
-height: 100px;
-text-wrap:inherit;
-padding-right: 10px;
-padding-left: 10px;
- 
+.atlas {
+    margin: auto;
+    align-self: center;
 }
 
-.navbar{
-background-color:var(--cor4);
-color: var(--cor3);
-display: flex;
-font-family: "Inter", sans-serif;
-font-size: larger;
-font-display:initial;
+.perfil {
+    margin: 15px;
+    width: 8%;
+    margin-top: 10px;
 
 }
 
-.lupa{
-margin-left: 73%;
-padding-right: 10px;
-padding-left: 10px;
+.cabeça {
+    background-color: var(--cor2);
+    display: flex;
+    height: 19%;
+    text-wrap: inherit;
+    padding-right: 10px;
+    padding-left: 10px;
+    align-self: center;
+    
 
 }
 
+.navbar {
+    background-color: var(--cor4);
+    color: var(--cor3);
+    height: 4%;
+    display: flex;
+    align-items: center;
+}
+
+.lupa {
+    width: 2%;
+    padding-right: 30px;
+    margin-left: 0.1px;
+}
+
+.Pesquisar {
+    margin-left: auto;
+    text-decoration: underline;
+}
+
+#left-content {
+    background-color: var(--cor2);
+    border-radius: 12px;
+    width: 35%;
+    height: 20%;
+    margin-top: 0.5%;
+    margin-left: 10%;
+    margin-bottom: 1.5%;
+    border: solid 1px black;
+    padding: 40px;
+    font-size: 25px;
+    padding: 30px;
+    align-content: center;
+
+
+}
+
+#img {
+    width: 35%;
+    height: 65%;
+    margin-left: 11%;
+    margin-bottom: 50%;
+    padding: 10px;
+    position: fixed;
+
+
+}
 
 #right-content {
     background-color: var(--cor2);
-    border-radius: 45px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 30%;
-    margin-left: 700px;
-    height: 200px;
-    align-items: center;
-    top: auto;
-    bottom: auto;
-    position: absolute;
+    border-radius: 12px;
+    margin-bottom: 1.5%;
+    width: 25%;
+    height: 55%;
+    padding: 30px;
+    border: solid 1px black;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 23.5%;
+    margin-top: 0.5%;
+    margin-right: 10%;
+    align-content: center;
+    
+}
+
+#texto {
+    margin: 7px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--cor3);
 }
 
 input::placeholder {
     color: var(--cor3);
+    font-weight: bold;
+    width: 300px;
+
+
+}
+
+#TextosIniciais{
+    width: 100%;
+    font-weight: bold;
+    color:var(--cor3);
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 10%;
 }
 
 #bottom-content {
-    width: 100%;
+    width: 170%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     padding: 0;
     color: var(--cor3);
+    padding: 20px;
+    
+
 }
+
 
 #sendButton {
     display: flex;
@@ -89,6 +152,18 @@ input::placeholder {
     background-color: var(--cor4);
 }
 
+button {
+    color: var(--cor3);
+    border: none;
+    border-radius: 12px;
+    height: 30px;
+    width: 30%;
+    margin-top: 15px;
+    margin-left: 75px;
+    
+}
+
+
 #right-content input {
     border: none;
     border-radius: 12px;
@@ -96,21 +171,16 @@ input::placeholder {
     margin-top: 15px;
 }
 
-input, button {
+input {
+    color: var(--cor3);
     border: none;
     border-radius: 12px;
-    height: 30px;
+    height: 45px;
+    width: 80%;
     margin-top: 15px;
-    color: var(--cor3);
+    
 }
 
-#left-content {
-    background-color: var(--cor2);
-    border-radius: 12px;
-    width: 30%;
-    margin-right: 700px;
-    height: 150px;
-}
 
 footer {
     background-color: var(--cor2);
