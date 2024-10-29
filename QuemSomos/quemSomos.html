@@ -1,86 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="quemSomos.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="quemSomos.css" />
+    <link rel="stylesheet" href="../componentsStyle/index.css" />
+    <link rel="stylesheet" href="../componentsStyle/header.css" />
+    <link rel="stylesheet" href="../componentsStyle/footer.css" />
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <div class="cabeça">
-            <img class="atlas" src="./Images/Logo.png" alt="Nome">
-            <img class="perfil" src="./Images/Login icon.png" alt="logo">
+            <img class="perfil" src="./Images/Login icon.png" alt="logo" />
+            <img class="atlas" src="./Images/Logo.png" alt="Nome" />
+            <img class="perfil" src="./Images/Login icon.png" alt="logo" />
         </div>
         <div class="navbar">
-            <p style="margin: 0px 20px 0px;">Quem somos?</p>
-            <p style="margin: 0px 20px 0px;">Contatos</p>
-            <p style="margin: 0px 20px 0px;">Ofertas</p>
-            <img class="lupa" src="./Images/lupa 1.png" alt="lupa">
+            <ul id="links">
+                <li><a class="navLinks" href="../QuemSomos/quemSomos.html">Quem somos?</a></li>
+                <li>|</li>
+                <li><a class="navLinks" href="../Contato/contato.html">Contatos</a></li>
+                <li>|</li>
+                <li><a class="navLinks" href="../TelaOfertas/oferta.html">Ofertas</a></li>
+            </ul>
+            <div id="searchBar">
+                <input type="text" name="searchInput" id="searchInput" placeholder="Pesquisar" />
+                <img class="lupa" src="./Images/lupa 1.png" alt="lupa" />
+            </div>
         </div>
     </header>
-    
+
     <main>
         <div id="left-content">
             <h2>Quem Somos!</h2>
             <p>
-                Bem-vindos à Atlas Journey, uma companhia dedicada a transformar sonhos em 
-                experiências inesquecíveis. Embarque conosco nessa jornada!
+                Bem-vindos à Atlas Journey, uma companhia dedicada a transformar
+                sonhos em experiências inesquecíveis. Embarque conosco nessa jornada!
             </p>
             <h3>Nossa Missão!</h3>
             <p>
-                Proporcionar experiências únicas, autênticas e personalizadas. 
-                Desde escapadas românticas até aventuras em família, trabalhamos
-                para que cada detalhe da sua viagem seja perfeito, 
-                refletindo suas experiências e desejos.
+                Proporcionar experiências únicas, autênticas e personalizadas. Desde
+                escapadas românticas até aventuras em família, trabalhamos para que
+                cada detalhe da sua viagem seja perfeito, refletindo suas experiências
+                e desejos.
             </p>
             <h3>Nosso Compromisso!</h3>
-            
+
             <p>
-                Na Atlas Journey cada viagem é uma nova história. 
-                Estamos comprometidos em proporcionar não apenas roteiros, 
-                mas memórias duradouras. 
-                Junte-se a nós e descubra o mundo de uma forma única!
+                Na Atlas Journey cada viagem é uma nova história. Estamos
+                comprometidos em proporcionar não apenas roteiros, mas memórias
+                duradouras. Junte-se a nós e descubra o mundo de uma forma única!
             </p>
         </div>
         <div id="right-content">
             <h2>O que Oferecemos!</h2>
-            
+
             <h3>Pacotes Personalizados.</h3>
             <p>
                 Criamos roteiros sob medida considerando seu interesse e orçamento.
             </p>
             <h3>Guias Especializados.</h3>
             <p>
-                Nossos guias possuem ampla experiência, podendo levá-los 
-                aos melhores locais e apresentá-los a cultura da região.
+                Nossos guias possuem ampla experiência, podendo levá-los aos melhores
+                locais e apresentá-los a cultura da região.
             </p>
             <h3>Sustentabilidade.</h3>
             <p>
-                Priorizamos sempre o turismo responsável sempre preservando o meio ambiente.
+                Priorizamos sempre o turismo responsável sempre preservando o meio
+                ambiente.
             </p>
             <h3>Suporte 24 horas.</h3>
             <p>
-                Estaremos sempre à disposição garantindo que 
-                sua viagem seja tranquila e segura sempre.
+                Estaremos sempre à disposição garantindo que sua viagem seja tranquila
+                e segura sempre.
             </p>
         </div>
-        
-            
-    
     </main>
     <footer>
-        <div style="display: flex; flex-direction: row; width: 11%; margin-top: 9px;">
-            <img src="images/instagram (1) 1.png" alt="" width="30px" height="30px" style="margin-right: 10px;">
-            <img src="images/facebook 1.png" alt="" width="30px" height="30px">
+        <div style="display: flex; flex-direction: row; width: 11%; margin-top: 9px">
+            <img src="images/instagram (1) 1.png" alt="" width="30px" height="30px" style="margin-right: 10px" />
+            <img src="images/facebook 1.png" alt="" width="30px" height="30px" />
         </div>
-        <div style="display: flex; flex-direction: row; width: 78%; justify-content: center;">
-            <p style="font-size: medium; font-weight: bold;">₢ Desenvolvido por "nome do time"</p>
+        <div style="
+          display: flex;
+          flex-direction: row;
+          width: 78%;
+          justify-content: center;
+        ">
+            <p style="font-size: medium; font-weight: bold">
+                ₢ Desenvolvido por "nome do time"
+            </p>
         </div>
-        <div style="display: flex; flex-direction: row; width: 11%; justify-content: space-evenly; margin-top: 7px;">
-            <img src="images/telefone 1.png" alt="" width="30px" height="30px">
-            <p style="font-size: small; font-weight: 700;">+55 47 99999999</p>
+        <div style="
+          display: flex;
+          flex-direction: row;
+          width: 11%;
+          justify-content: space-evenly;
+          margin-top: 7px;
+        ">
+            <img src="images/telefone 1.png" alt="" width="30px" height="30px" />
+            <p style="font-size: small; font-weight: 700">+55 47 99999999</p>
         </div>
     </footer>
 </body>
+
 </html>

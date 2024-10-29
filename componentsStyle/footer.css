@@ -1,0 +1,20 @@
+:root {
+    --cor1: #55ACE9;
+    --cor2: #DBE8FF;
+    --cor3: #A47ADA;
+    --cor4: #BFB8FF;
+    --cor5: #FFFFFF;
+}
+
+footer {
+    background-color: var(--cor2);
+    color: var(--cor3);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+}

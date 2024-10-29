@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --cor1: #55ACE9;
+    --cor2: #DBE8FF;
+    --cor3: #A47ADA;
+    --cor4: #BFB8FF;
+    --cor5: #FFFFFF;
+}
+
+header {
+    background-color: var(--cor2);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cabeça {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perfil {
+    height: 60%;
+    margin: 10px;
+}
+
+.navbar {
+    background-color: var(--cor4);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--cor3);
+    padding: 3px;
+}
+
+#links {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navLinks {
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+#searchBar {
+    display: flex;
+    flex-direction: row;
+}
+
+#searchBar input::placeholder {
+    color: var(--cor3);
+}
+
+#searchInput {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px var(--cor3);
+}

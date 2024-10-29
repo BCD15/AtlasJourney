@@ -1,64 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contato.css">
+    <!-- <link rel="stylesheet" href="../componentsStyle/index.css" /> -->
+    <link rel="stylesheet" href="../componentsStyle/header.css" />
+    <link rel="stylesheet" href="../componentsStyle/footer.css" />
     <title>Contato</title>
 </head>
-
 <body>
     <header>
         <div class="cabeça">
-            <img class="atlas" src="images/Logo.png" alt="Nome">
-            <img class="perfil" src="images/Login icon.png" alt="logo">
+            <img class="perfil" src="./Images/Login icon.png" alt="logo" />
+            <img class="atlas" src="./Images/Logo.png" alt="Nome" />
+            <img class="perfil" src="./Images/Login icon.png" alt="logo" />
         </div>
         <div class="navbar">
-            <p style="margin: 0px 20px 0px">Quem Somos?</p>
-            <p style="margin: 0px 50px 0px">Contatos</p>
-            <p style="margin: 0px 20px 0px">Ofertas</p>
-            <p class="Pesquisar">Pesquisar___________</p>
-            <img class="lupa" src="images/lupa 1.png" alt="lupa">
+            <ul id="links">
+                <li><a class="navLinks" href="../QuemSomos/quemSomos.html">Quem somos?</a></li>
+                <li>|</li>
+                <li><a class="navLinks" href="../Contato/contato.html">Contatos</a></li>
+                <li>|</li>
+                <li><a class="navLinks" href="../TelaOfertas/oferta.html">Ofertas</a></li>
+            </ul>
+            <div id="searchBar">
+                <input type="text" name="searchInput" id="searchInput" placeholder="Pesquisar" />
+                <img class="lupa" src="./Images/lupa 1.png" alt="lupa" />
+            </div>
         </div>
     </header>
     <main>
-
-        <div>
-            <div id="left-content">
-                <p style="color: #A47ADA; text-align: center; font-weight: bold;"> Preencha o
-                    formulário e aguarde que um de nossos atendentes irá entrará contato.</p>
+        <div id="left-content">
+            <div id="topTextBox">
+                <p style="color: #A47ADA; text-align: center; font-weight: bold;">
+                    Preencha o formulário e aguarde que um de nossos atendentes irá entrará contato.
+                </p>
             </div>
             <div id="img">
-                <img src="images/elevador-lacerda.jpg" width="100%" ; height="300px" ; style="border-radius: 12px;">
+                <img src="images/elevador-lacerda.jpg" width="100%" height="300px" style="border-radius: 15px;">
             </div>
         </div>
-
         <div id="right-content">
-            <p id="texto"> INFORME SEU DADOS </p>
-            <div id="TextosIniciais">
-                <input id="Nome Completo" type="text" placeholder="  Nome Completo">
-                <input id="CPF" type="text" placeholder="  CPF">
-                <input id="E-mail" type="text" placeholder="  E-mail">
+            <h3> INFORME SEU DADOS </h3>
+            <div id="form">
+                <input id="Nome Completo" type="text" placeholder="  Nome Completo" style="width: 100%;">
+                <input id="CPF" type="text" placeholder="  CPF" style="width: 100%;">
+                <input id="E-mail" type="text" placeholder="  E-mail" style="width: 100%;">
+                <input id="DDD" type="text" placeholder="  DDD" style="width: 25%;">
+                <input id="Digite seu Número" type="text" placeholder="  Digite seu Número" style="width: 70%;">
             </div>
-            <div>
-                <input id="DDD" type="text" placeholder="  DDD"
-                    style="width: 100px; font-weight: bold; color: #A47ADA; margin-left: 10%;">
-                <input id="Digite seu Número" type="text" placeholder="  Digite seu Número"
-                    style="width: 200px; font-weight: bold; color: #A47ADA;">
-            </div>
-            <div id="bottom-content">
-                <button id="sendButton" onclick="Send()">
-                    <p style="margin: 4px; margin-left: 16px;">CONFIRMAR</p>
-                    <img src="images/seta.PNG" width="22px" height="22px" style="margin: 5px;">
-                </button>
-            </div>
+            <button id="sendButton" onclick="Send()">
+                <span></span>
+                <p>CONFIRMAR</p>
+                <img src="images/seta.PNG" width="22px" height="22px" style="margin: 5px;">
+            </button>
         </div>
-
-
-
     </main>
-
     <footer>
         <div style="display: flex; flex-direction: row; width: 11%; margin-top: 9px;">
             <img src="images/instagram.png" alt="" width="30px" height="30px" style="margin-right: 10px;">
@@ -72,8 +70,5 @@
             <p style="font-size: small; font-weight: 700;">+55 47 99999999</p>
         </div>
     </footer>
-
-
 </body>
-
 </html>
