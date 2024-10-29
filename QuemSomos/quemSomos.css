@@ -5,6 +5,12 @@
     --cor4: #BFB8FF;
     --cor5: #FFFFFF;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .atlas{
     margin:auto
 }
@@ -37,7 +43,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
+    margin-top: 20px;
 }
 #left-content{
     border: solid 1px black;
@@ -60,6 +66,7 @@ h2 {
 
 
 p {
+    margin: 15px;
     text-align: center;
     font: normal, arial, verdana, serif;
 }
