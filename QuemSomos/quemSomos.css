@@ -11,7 +11,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 15px;
+    margin-top: 20px;
     text-align: center;
 
 }

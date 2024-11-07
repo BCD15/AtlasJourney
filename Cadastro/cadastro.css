@@ -24,12 +24,12 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 40%;
+    min-width: 40%;
+    max-width: 45%;
     padding: 30px;
     padding-bottom: 0%;
     box-sizing: border-box;
     margin-bottom: 90px;
-    max-width: 100%;
 }
 
 #left-content {
