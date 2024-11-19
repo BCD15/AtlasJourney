@@ -100,7 +100,7 @@ main {
     margin-top: 5px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 footer {
@@ -127,6 +127,13 @@ li {
     border: 1px solid #ddd;
     padding: 20px;
 }
-#txtbtn{
-    margin-bottom: 100 px;
+.split-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    list-style-type: disc;
+    margin: 0;
+    padding: 0;
+}
+.split-list li {
+    padding: 1px;
 }
