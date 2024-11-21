@@ -8,3 +8,14 @@
 body {
     font-family: "Inter", sans-serif;
 }
+
+html, body {
+    height: 100%; /* Garante que a página ocupe 100% da altura */
+    margin: 0; /* Remove margens padrões */
+    display: flex;
+    flex-direction: column; /* Define um layout em coluna */
+}
+
+main {
+    flex: 1; /* Faz o main ocupar o espaço restante */
+}
