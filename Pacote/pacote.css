@@ -10,7 +10,143 @@
 
 *{
     margin: 0%;
-    padding: 0%;
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+    :root {
+        --cor1: #55ACE9;
+        --cor2: #DBE8FF;
+        --cor3: #A47ADA;
+        --cor4: #BFB8FF;
+        --cor5: #FFFFFF;
+    }
+    
+    *{
+        margin: 0%;
+        padding: 0%;
+        font-family: sans-serif;
+    }    
+    .atlas{
+        margin:auto
+    }
+    .perfil{
+    margin: 15px;
+    height: 60%;
+    }
+    
+    .cabeça{
+    background-color: var(--cor2);
+    align-items: center;
+    display: flex;
+    height: 90px;
+    text-wrap:inherit;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+    }
+    
+    .navbar{
+    background-color:var(--cor4);
+    color: var(--cor3);
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-size: larger;
+    font-display:initial;
+    
+    }
+    
+    .lupa{
+    margin-left: 73%;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+    }
+    
+    
+    body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 30px;
+        padding-bottom: 1%;
+        box-sizing: border-box;
+        margin-bottom: 90px;
+        max-width: 100%;
+    }
+    
+    .right-content {
+        background-color: var(--cor2);
+        border-radius: 45px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 29%;
+        margin-left: 40px;
+        height: 575px;
+        border: 3px solid #000;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);}
+    
+    #texto-direita{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .left-content {
+        margin-left: 7%;
+    }
+    
+    .bottom-content {
+        background-color: var(--cor2);
+        border-radius: 25px;
+        height: 90px;
+        width: 900px;
+        justify-content: center;
+        margin-top: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        list-style-type: none;
+        border: 3px solid #000;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    footer {
+        background-color: var(--cor2);
+        color: var(--cor3);
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        box-sizing: border-box;
+    }
+    .popup {
+        display: grid;
+        grid-template-columns: 1fr auto; 
+        gap: 20px; 
+        border: 1px solid #ddd;
+        padding: 20px;
+    }
+    .split-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        margin: 0;
+        padding: 0;
+    }
+    .split-list li {
+        padding: 1px;
+    }  padding: 0%;
     font-family: sans-serif;
 }    
 .atlas{
