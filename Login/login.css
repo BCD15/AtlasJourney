@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 :root {
     --cor1: #55ACE9;
     --cor2: #DBE8FF;
@@ -36,7 +34,6 @@ main {
 
 #left-content {
     width: 49.5%;
-    border-right: solid 3px #55ACE9;
     border-bottom: solid 3px #55ACE9;
     display: flex;
     flex-direction: row;
@@ -81,6 +78,7 @@ main {
 #right-content {
     width: 49.5%;
     padding: 1px;
+    border-left: solid 3px #55ACE9;
     border-bottom: solid 3px #55ACE9;
     box-sizing: border-box;
 }
@@ -92,42 +90,95 @@ main {
     padding: 0;
 }
 
-footer {
-    background-color: var(--cor2);
-    color: var(--cor3);
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    box-sizing: border-box;
+#telefone-number {
+    font-size: small;
+    font-weight: 700;
 }
 
-#telefone-number {
-    font-size: small; font-weight: 700;
+#direitos {
+    font-size: x-large;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 1092px) {
-    #left-content button p {
-        visibility: hidden;
+    main {
+        max-height: 43%;
+        width: 80%;
+        padding: 20px;
+        padding-right: 10px;
+    }
+
+    #left-content {
+        flex: 1;
     }
 
     #left-content button {
-        padding: 0.3%;
-        width: 20%;
-        height: 8.5%;
-        border-radius: 20px;
-        margin-right: 20px;
-        margin-left: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
     }
 
-    @media screen and (max-width: 1230px) {
-        #loginIcon {
-            width: 20px;
-            height: 20px;
-            border-radius: 100%;
-        }
+    #left-content button p {
+        display: none;
+    }
+
+    #left-content button img {
+        width: 80%;
+        height: 80%;
+    }
+
+    #left-content p {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #loginIcon {
+        width: 20%;
+        height: 24.5%;
+        margin-right: 18px;
+    }
+
+    #right-content {
+        display: none;
+    }
+
+    #bottom-content {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    #bottom-content img {
+        width: 90%;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+
+    #facebookIcon {
+        display: none;
+    }
+
+    #telefone-number {
+        display: none;
+    }
+
+    #direitos {
+        font-size: large;
+        font-weight: 600;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 }
