@@ -17,3 +17,25 @@ footer {
     margin-top: 30px;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 1092px) {
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+
+    #facebookIcon {
+        display: none;
+    }
+
+    #telefone-number {
+        display: none;
+    }
+
+    #direitos {
+        font-size: large;
+        font-weight: 600;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
