@@ -90,16 +90,6 @@ main {
     padding: 0;
 }
 
-#telefone-number {
-    font-size: small;
-    font-weight: 700;
-}
-
-#direitos {
-    font-size: x-large;
-    font-weight: bold;
-}
-
 @media screen and (max-width: 1092px) {
     main {
         max-height: 43%;

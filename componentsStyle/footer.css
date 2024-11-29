@@ -18,6 +18,23 @@ footer {
     box-sizing: border-box;
 }
 
+footer div{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#telefone-number {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: small;
+    font-weight: 700;
+}
+
+#direitos {
+    font-size: x-large;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 1092px) {
     footer {
         position: absolute;
