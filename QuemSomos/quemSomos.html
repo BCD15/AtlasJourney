@@ -8,88 +8,102 @@
     <link rel="stylesheet" href="../componentsStyle/header.css" />
     <link rel="stylesheet" href="../componentsStyle/footer.css" />
     <title>Quem Somos?</title>
+    <style>
+        main {
+            min-width: 1080px;
+            max-width: 1920px;
+            margin: auto;
+        }
+
+        img{
+           min-width: 10%;
+           max-width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="cabeça">
-            <img id="menu" class="perfil" src="./Images/menuIcon.png" alt="logo" />
+            <img class="menu" src="./Images/menu.JPG" alt="menu" style="width:2%;  height: 65%;"/>
             <img class="atlas" src="./Images/Logo.png" alt="Nome" />
-            <img class="perfil" src="./Images/Login icon.png" alt="logo" />
+            <img class="perfil" src="./Images/Login icon.JPG" alt="logo" style="width: 2%; height: 65%;"/>
         </div>
         <div class="navbar">
             <ul id="links">
-                <li><a class="navLinks" href="../QuemSomos/quemSomos.html">Quem somos?</a></li>
-                <li>|</li>
+                <li><a class="navLinks" href="../QuemSomos/quemSomos.html">Quem Somos?</a></li>
+                <li class="Deadline">|</li>
                 <li><a class="navLinks" href="../Contato/contato.html">Contatos</a></li>
-                <li>|</li>
+                <li class="Deadline">|</li>
                 <li><a class="navLinks" href="../TelaOfertas/oferta.html">Ofertas</a></li>
             </ul>
             <div id="searchBar">
                 <input type="text" name="searchInput" id="searchInput" placeholder="Pesquisar" />
-                <img class="lupa" src="./Images/lupa 1.png" alt="lupa" />
+                <img class="lupa" src="./Images/lupa.png" alt="lupa" />
             </div>
         </div>
     </header>
     <main>
         <div id="left-content">
-            <h2>Quem Somos!</h2>
-            <p>
-                Bem-vindos à Atlas Journey, uma companhia dedicada a transformar
+            <h2 style="margin-top: 25px; font-size: 150%;">Quem Somos?</h2>
+            <p>Bem-vindos à Atlas Journey, uma companhia dedicada a transformar
                 sonhos em experiências inesquecíveis. Embarque conosco nessa jornada!
             </p>
-            <h3>Nossa Missão!</h3>
-            <p>
-                Proporcionar experiências únicas, autênticas e personalizadas. Desde
+            
+            <h3 style="margin-top: 25px;font-size: 150%;">Nossa Missão</h3>
+            <p>Proporcionar experiências únicas, autênticas e personalizadas. Desde
                 escapadas românticas até aventuras em família, trabalhamos para que
                 cada detalhe da sua viagem seja perfeito, refletindo suas experiências
                 e desejos.
             </p>
-            <h3>Nosso Compromisso!</h3>
 
-            <p>
-                Na Atlas Journey cada viagem é uma nova história. Estamos
+            <h3 style="margin-top: 25px;font-size: 150%;">Nosso Compromisso</h3>
+            <p>Na Atlas Journey cada viagem é uma nova história. Estamos
                 comprometidos em proporcionar não apenas roteiros, mas memórias
                 duradouras. Junte-se a nós e descubra o mundo de uma forma única!
             </p>
         </div>
-        <div id="right-content">
-            <h2>O que Oferecemos!</h2>
 
-            <h3>Pacotes Personalizados.</h3>
-            <p>
+        <div id="right-content">
+            <h2 style="margin-top: 10px;font-size: 150%;"
+            >O que Oferecemos?</h2>
+
+            <p style="margin-top: 20px;">
+                <h3>Pacotes Personalizados:</h3>
+                
                 Criamos roteiros sob medida considerando seu interesse e orçamento.
-            </p>
-            <h3>Guias Especializados.</h3>
-            <p>
+            </p>             
+            
+            <p style="margin-top: 20px;">
+                <h3>Guias Especializados:</h3>
+                
                 Nossos guias possuem ampla experiência, podendo levá-los aos melhores
                 locais e apresentá-los a cultura da região.
             </p>
-            <h3>Sustentabilidade.</h3>
-            <p>
+            
+            <p style="margin-top: 20px;">
+                <h3>Sustentabilidade:</h3>
                 Priorizamos sempre o turismo responsável sempre preservando o meio
                 ambiente.
             </p>
-            <h3>Suporte 24 horas.</h3>
-            <p>
+            
+            <p style="margin-top: 20px;">
+                <h3>Suporte 24 horas:</h3>
                 Estaremos sempre à disposição garantindo que sua viagem seja tranquila
                 e segura sempre.
             </p>
         </div>
     </main>
     <footer>
-        <div id="socialMediaIcons" style="display: flex; flex-direction: row; width: 11%; margin-top: 9px;">
-            <img src="images/instagramIconFooter.png" alt="" width="30px" height="30px" style="margin-right: 10px;">
-            <img id="facebookIcon" src="images/facebookIconFooter.png" alt="" width="30px" height="30px">
+        <div style="display: flex; flex-direction: row; width: 11%; justify-content: center;">
+            <img src="images/instagram.png" alt="" width="15%" height="20%" style="margin-right: 10%;">
+            <img src="images/facebook.png" alt="" width="15%" height="20%">
         </div>
         <div style="display: flex; flex-direction: row; width: 78%; justify-content: center;">
-            <p id="direitos">₢ AtlasJouney</p>
+            <p style="font-size: medium; font-weight: bold;">₢ AtlasJourney</p>
         </div>
-        <div style="display: flex; flex-direction: row; width: 11%; justify-content: space-evenly; margin-top: 7px;">
-            <picture>
-                <source srcset="images/facebookIconFooter.png" media="(max-width: 1092px)">
-                <img src="images/phoneIcon.png" alt="" width="30px" height="30px">
-            </picture>
-            <p id="telefone-number" >+55 47 99999999</p>
+        <div style="display: flex; flex-direction: row; width: 11%; justify-content: center;">
+            <img src="images/telefone.png" alt="" width="20%" height="25%">
+            <p style="font-size: small; font-weight: 700;">+55 (47) 99999-9999</p>
         </div>
     </footer>
 </body>
