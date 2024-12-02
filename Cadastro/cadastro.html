@@ -12,23 +12,25 @@
 <body>
     <main>
         <div id="left-content">
-            <input id="name" type="text" placeholder="  Nome" style="width: 95%;">
-            <input id="sName" type="text" placeholder="  Sobrenome" style="width: 95%;">
-            <input id="cpf" type="number" placeholder="  CPF" style="width: 95%;">
-            <input id="country" type="text" placeholder="  País" style="width: 95%;">
-            <input id="date" type="text" onfocus="(this.type='date')" placeholder="  Data de Nascimento" style="width: 95%;">
+            <input id="name" type="text" placeholder="Nome" style="width: 95%;">
+            <input id="sName" type="text" placeholder="Sobrenome" style="width: 95%;">
+            <input id="cpf" type="number" placeholder="CPF" style="width: 95%;">
+            <input id="country" type="text" placeholder="País" style="width: 95%;">
+            <input id="date" type="text" onfocus="(this.type='date')" placeholder="Data de Nascimento" style="width: 95%;">
         </div>
         <div id="right-content">
-            <input id="email" type="email" placeholder="  Email" style="width: 95%;">
-            <input id="password" type="password" placeholder="  Senha" style="width: 95%;">
-            <input id="cPassword" type="password" placeholder="  Confirmar senha" style="width: 95%;">
-            <button onclick="window.location='../Home/index.html'" style="display: flex; flex-direction: row; justify-content: space-evenly;">
+            <input id="email" type="email" placeholder="Email" style="width: 95%;">
+            <input id="password" type="password" placeholder="Senha" style="width: 95%;">
+            <input id="cPassword" type="password" placeholder="Confirmar senha" style="width: 95%;">
+            <button class="socialButtons" onclick="window.location='../Home/index.html'" >
                 <img src="images/googleIcon.png" width="23px" height="23px">
                 <p style="margin: 7px; color: #FFFFFF;">Faça login com Google</p>
+                <span></span>
             </button>
-            <button onclick="window.location='../Home/index.html'" style="display: flex; flex-direction: row; justify-content: space-evenly;">
+            <button class="socialButtons" onclick="window.location='../Home/index.html'" >
                 <img src="images/facebookIcon.png" width="23px" height="23px">
                 <p style="margin: 7px; color: #FFFFFF;">Faça login com Facebook</p>
+                <span></span>
             </button>
         </div>
         <div id="bottom-content">
@@ -40,7 +42,7 @@
                 </button>
             </div>
             <div id="logoDiv">
-                <img src="images/Logo.png"alt="" width="90%">
+                <img id="logoImg" src="images/Logo.png" alt="">
             </div>
         </div>
     </main>

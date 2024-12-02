@@ -55,7 +55,7 @@ input::placeholder {
 #right-content button {
     background-color: var(--cor4);
     color: var(--cor5);
-    width: 90%;
+    width: 95%;
 }
 
 button {
@@ -71,6 +71,22 @@ input, button {
     margin-top: 15px;
 }
 
+.socialButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.socialButtons img {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.socialButtons img {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 #left-content p, a {
     color: var(--cor1);
     text-decoration: none;
@@ -84,7 +100,6 @@ input, button {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    /* margin-left: 13px; */
 }
 
 #bottom-content {
@@ -93,12 +108,14 @@ input, button {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     padding: 0;
     margin-left: 3%;
 }
 
 #logoDiv {
     width: 100%;
+    height: 50%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -106,6 +123,11 @@ input, button {
     padding: 0;
     border-top: solid 3px #55ACE9;
 }
+
+#logoImg {
+    width: 60%;
+}
+
 #sendButton {
     display: flex;
     flex-direction: row;
@@ -148,5 +170,13 @@ input, button {
         justify-content: center;
         align-items: center;
         padding: 0;
+    }
+
+    #logoDiv {
+        width: 100%;
+    }
+
+    #logoImg {
+        width: 90%;
     }
 }
