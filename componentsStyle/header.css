@@ -28,6 +28,12 @@ header {
 .perfil {
     height: 60%;
     margin: 10px;
+    background-color: var(--cor4);
+    border-radius: 50%;
+}
+
+#menu {
+    visibility: hidden;
 }
 
 .navbar {
@@ -67,4 +73,23 @@ header {
     background-color: transparent;
     border: none;
     border-bottom: solid 2px var(--cor3);
+}
+
+@media screen and (max-width: 1092px) {
+    .atlas {
+        width: 60%;
+    }
+
+    .perfil {
+        height: 40%;
+        margin: 10px;
+    }
+
+    #menu {
+        visibility: visible;
+    }
+
+    .navbar {
+        display: none;
+    }
 }

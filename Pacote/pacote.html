@@ -12,14 +12,22 @@
 <body>
     <header>
         <div class="cabeça">
-            <img class="atlas" src="Images/Logo.png" alt="Nome">
-            <img class="perfil" src="Images/Login icon.png" alt="logo">
+            <img id="menu" class="perfil" src="./Images/menuIcon.png" alt="logo" />
+            <img class="atlas" src="./Images/Logo.png" alt="Nome" />
+            <img class="perfil" src="./Images/Login icon.png" alt="logo" />
         </div>
         <div class="navbar">
-            <p style="margin: 0px 20px 0px;">Quem somos?</p>
-            <p style="margin: 0px 20px 0px;">Contatos</p>
-            <p style="margin: 0px 20px 0px;">Ofertas</p>
-            <img class="lupa" src="images/lupa 1.png" alt="lupa">
+            <ul id="links">
+                <li><a class="navLinks" href="../QuemSomos/quemSomos.html">Quem somos?</a></li>
+                <li>|</li>
+                <li><a class="navLinks" href="../Contato/contato.html">Contatos</a></li>
+                <li>|</li>
+                <li><a class="navLinks" href="../TelaOfertas/oferta.html">Ofertas</a></li>
+            </ul>
+            <div id="searchBar">
+                <input type="text" name="searchInput" id="searchInput" placeholder="Pesquisar" />
+                <img class="lupa" src="./Images/lupa 1.png" alt="lupa" />
+            </div>
         </div>
     </header>
     <main>
