@@ -38,19 +38,15 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
     width: 30%;
+    height:100% ;
     margin-left: 8%;
     border: #000 solid 2px;
     border-bottom: #9e9e9e solid 3px;
     box-shadow: #000 3px;
 }
 
-#texto-direita{
-    display: flex;
-    justify-content: center;
-}
-
 .left-content {
-    
+    margin-left: 4%;
 }
 
 .bottom-content {
@@ -83,7 +79,7 @@ footer {
     border-radius: 17px;
     width: 300px;
     height: 50px;
-    margin-left: 12%;
+    margin-left: 17%;
     font-weight: bold;
     font-size: larger;
     display: flex;
@@ -100,4 +96,80 @@ footer {
 }
 .split-list li {
     padding: 1px;
+}
+
+
+@media screen and (max-width: 425) {
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        padding: 20px; /* Menor padding para telas pequenas */
+        padding-bottom: 0%;
+        box-sizing: border-box;
+        margin-bottom: 90px;
+        max-width: 100%;
+        margin-left: 0; /* Removido o margin-left fixo */
+    }
+    /* {
+        margin-left: 0%;
+    } */
+    .right-content {
+        background-color: var(--cor2);
+        border-radius: 45px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        border: #000 solid 2px;
+        margin-bottom: 20px;
+    }
+
+    .left-content {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .bottom-content {
+        background-color: var(--cor2);
+        border-radius: 25px;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .popup {
+        background-color: #BFB8FF;
+        color: #A47ADA;
+        border-radius: 17px;
+        width: 90%; /* Ajustado para caber em telas menores */
+        height: auto; /* Altura automática */
+        margin-left: auto;
+        margin-right: auto; /* Centralizado horizontalmente */
+        font-weight: bold;
+        font-size: 16px; /* Fonte ajustada */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .split-list {
+        display: grid;
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+        margin: 0;
+        padding: 0;
+    }
+    
+    .split-list li {
+        padding: 5px; /* Espaçamento ajustado */
+    }
 }
