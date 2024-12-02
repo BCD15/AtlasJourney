@@ -84,3 +84,45 @@ input::placeholder {
     justify-content: space-between;
     align-items: center;
 }
+
+@media screen and (max-width: 1092px){
+    main {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+ 
+    .perfil {
+        display: none;
+    }
+
+    .navbar, .navLinks, .Deadline {
+        display: none;
+    }
+
+    .searchBar {
+        padding-bottom: 40%;
+    }
+    
+    .elevador {
+        display: none;
+    }
+
+    #right-content {
+        border: none;
+        width: none;
+        height: none%;
+        margin-top: 1%;
+        }
+       
+    #topTextBox {
+        border: none;
+        }
+  
+    #left-content{
+        border: none;
+        width: none;
+        height: none;
+        margin-top: 1%;
+    }
+}
