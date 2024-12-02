@@ -5,9 +5,11 @@
     --cor4: #BFB8FF;
     --cor5: #FFFFFF;
 }
+.atlas {
+    margin-left: 38%;
+}
 
 body {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,11 +22,13 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    height: 100%;
     padding: 30px;
     padding-bottom: 0%;
     box-sizing: border-box;
     margin-bottom: 90px;
     max-width: 100%;
+    margin-left: 2%;
 }
 
 .right-content {
@@ -34,30 +38,28 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
     width: 30%;
-    margin-left: 40px;
-    
-}
-
-#texto-direita{
-    display: flex;
-    justify-content: center;
+    height:100% ;
+    margin-left: 8%;
+    border: #000 solid 2px;
+    border-bottom: #9e9e9e solid 3px;
+    box-shadow: #000 3px;
 }
 
 .left-content {
-    margin-left: 7%;
+    margin-left: 4%;
 }
 
 .bottom-content {
     background-color: var(--cor2);
     border-radius: 25px;
-    height: 80px;
+    height: 15%;
+    width: 105%;
     justify-content: center;
-    margin-top: 5px;
+    margin-top: 1%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    list-style-type: none;
-}
+    }
 
 footer {
     background-color: var(--cor2);
@@ -72,12 +74,20 @@ footer {
     box-sizing: border-box;
 }
 .popup {
-    display: grid;
-    grid-template-columns: 1fr auto; 
-    gap: 20px; 
-    border: 1px solid #ddd;
-    padding: 20px;
+    background-color: #BFB8FF;
+    color: #A47ADA;
+    border-radius: 17px;
+    width: 300px;
+    height: 50px;
+    margin-left: 17%;
+    font-weight: bold;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
 }
+
 .split-list {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -86,4 +96,46 @@ footer {
 }
 .split-list li {
     padding: 1px;
+}
+.mobile-content{
+    display: none;
+}
+
+
+@media screen and (max-width: 425px) {
+    main {
+        display: flex;
+        flex-direction: column; /* Organiza os elementos verticalmente */
+        flex-wrap: nowrap;
+        width: 100%;
+        height: auto; /* Ajusta para altura dinâmica */
+        padding: 0;
+        box-sizing: border-box;
+        margin-bottom: 90px;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .left-content {
+        display: none;
+    }
+
+    .right-content {
+        display: none;
+    }
+    .mobile-content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: var(--cor2);
+        justify-content: center;
+        margin-left: 5%;
+        border-radius: 20px;
+        margin-top: 5%;
+    }
+    .popup{
+        margin-top: 10%;
+        margin-right: 16%;
+    }
+
 }
