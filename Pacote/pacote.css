@@ -99,51 +99,61 @@ footer {
 }
 
 
-@media screen and (max-width: 425) {
+@media screen and (max-width: 425px) {
     main {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column; /* Organiza os elementos verticalmente */
+        flex-wrap: nowrap;
         width: 100%;
-        height: 100%;
-        padding: 20px; /* Menor padding para telas pequenas */
-        padding-bottom: 0%;
+        height: auto; /* Ajusta para altura dinâmica */
+        padding: 0;
         box-sizing: border-box;
         margin-bottom: 90px;
         max-width: 100%;
-        margin-left: 0; /* Removido o margin-left fixo */
+        margin-left: 0;
     }
-    /* {
-        margin-left: 0%;
-    } */
+
+    .left-content {
+        margin: 0 auto; /* Centraliza horizontalmente */
+        margin-bottom: 20px;
+        width: 100%; /* Ocupa toda a largura */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza o conteúdo */
+        justify-content: center; /* Centraliza verticalmente */
+    }
+
+    .left-content img {
+        width: 80%; /* Reduz tamanho da imagem */
+        height: auto; /* Mantém proporção */
+        border-radius: 15px; /* Aplica bordas arredondadas */
+        margin-top: 20px; /* Adiciona espaçamento acima */
+    }
+
     .right-content {
         background-color: var(--cor2);
         border-radius: 45px;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
-        width: 100%;
-        height: auto;
-        margin-left: 0;
+        flex-direction: column; /* Alinhamento vertical */
+        align-items: center; /* Centraliza horizontalmente */
+        justify-content: center; /* Centraliza conteúdo */
+        width: 100%; /* Expande para largura máxima */
+        height: auto; /* Altura ajustável */
+        margin: 0 auto 20px; /* Centraliza horizontalmente e adiciona margem inferior */
         border: #000 solid 2px;
-        margin-bottom: 20px;
+        padding: 30px; /* Adiciona espaçamento interno */
     }
 
-    .left-content {
-        margin-left: 0;
-        margin-bottom: 20px;
+    .right-content h2 {
+        text-align: center; /* Centraliza o texto */
+        margin-bottom: 20px; /* Espaçamento abaixo do título */
     }
 
-    .bottom-content {
-        background-color: var(--cor2);
-        border-radius: 25px;
-        height: auto;
-        width: 100%;
-        justify-content: center;
-        margin-top: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+    .right-content img {
+        width: 10%; /* Expande largura da imagem */
+        height: auto; /* Mantém proporção */
+        margin-bottom: 0px; /* Espaçamento abaixo da imagem */
     }
 
     .popup {
@@ -151,25 +161,12 @@ footer {
         color: #A47ADA;
         border-radius: 17px;
         width: 90%; /* Ajustado para caber em telas menores */
-        height: auto; /* Altura automática */
-        margin-left: auto;
-        margin-right: auto; /* Centralizado horizontalmente */
         font-weight: bold;
         font-size: 16px; /* Fonte ajustada */
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px;
-    }
-
-    .split-list {
-        display: grid;
-        grid-template-columns: 1fr; /* Uma coluna em telas menores */
-        margin: 0;
-        padding: 0;
-    }
-    
-    .split-list li {
-        padding: 5px; /* Espaçamento ajustado */
+        margin-top: 20px; /* Espaçamento acima do botão */
     }
 }
