@@ -130,6 +130,18 @@ main {
         border: none;
     }
     header{
-        padding-top: 0%;
+        padding-top: 35%;
+    }
+}
+
+@media screen and (max-width: 1366px){
+    .left-content{
+        margin-left: 0%;
+    }
+    header{
+        padding-top: 15%;
+    }
+    #texto-direita{
+        margin-left: 0%;        
     }
 }
