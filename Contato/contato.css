@@ -89,7 +89,8 @@ input::placeholder {
     main {
         flex-direction: column-reverse;
         flex-wrap: wrap;
-        justify-content: center;
+        margin-left: 10%;
+        margin-top: 0.1%;
         }
  
     .perfil {
@@ -110,19 +111,36 @@ input::placeholder {
 
     #right-content {
         border: none;
-        width: none;
-        height: none%;
-        margin-top: 1%;
-        }
-       
-    #topTextBox {
-        border: none;
-        }
-  
-    #left-content{
-        border: none;
-        width: none;
+        width: 80%;
         height: none;
+
+        }
+
+    #form{
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        justify-content: none;
         margin-top: 1%;
     }
+
+    #topTextBox {
+        display: flex;
+        background-color: var(--cor2);
+        height: 60%;
+        border: none;
+        border-radius: 15px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.5%;
+        margin-bottom: 50%;
+    }
+    #left-content{
+        border: none;
+        width: 75%;
+        height: none;
+        margin-top: 10%;
+    }
+
+
 }

@@ -39,38 +39,19 @@ p {
     margin: 10px;
 }
 
-@media screen and (max-width: 1092px){
- 
+@media screen and (max-width: 800px) {
     main {
-        display: flex;
         flex-direction: column;
-  
-    }
- 
-    .perfil {
-        display: none;
+        gap: 30px;
     }
 
-    .navbar, .navLinks, .Deadline {
-        display: none;
+    #left-content {
+        width: 85%;
+        margin: auto;
     }
 
-    .searchBar {
-        padding-bottom: 40%;
+    #right-content {
+        width: 85%;
+        margin: auto;
     }
-
-    #left-content{
-    border: none;
-    width: 30%;
-    margin-left: 2%;
-    }
-
-    #right-content{
-    border: none;
-    width: 30%;
-    margin-left: 2%;
-    
-}
-
-
 }
