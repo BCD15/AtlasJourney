@@ -5,7 +5,7 @@ function menuHamburgOpen() {
   sla.classList.toggle("dispFlex");
   menuHamburg.forEach((item) => {
     item.classList.toggle("dispNone");
-  }); 
+  });
 }
 
 function GetCardItem() {
