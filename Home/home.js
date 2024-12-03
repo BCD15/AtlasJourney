@@ -30,7 +30,7 @@ function RenderCard(item) {
           <div class="content">
               <p class="p1">${item.text}</p>
               <a class="a" href="../../Pacote/pacote.html?id=${item.id}">Ler mais</a>
-          </div>
+          </div>  
         </div>
       `;
 }

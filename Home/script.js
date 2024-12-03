@@ -2,33 +2,33 @@ function dados() {
     const cardItens = [
         {
             id: 1,
-            text: 'teste',
-            url: '#',
+            text: 'Aventura',
+            url: 'images/Aventura.webp',
         },
         {
             id: 2,
-            text: 'teste2',
-            url: '#',
+            text: 'Campo',
+            url: 'images/Campo.webp',
         },
         {
             id: 3,
-            text: 'teste3',
-            url: '#',
+            text: 'Praias',
+            url: 'images/Praias_1.webp',
         },
         {
             id: 4,
-            text: 'teste4',
-            url: '#',
+            text: 'Nacionais',
+            url: 'images/Nacionais.png',
         },
         {
             id: 5,
-            text: 'teste5',
-            url: '#',
+            text: 'Internacionais',
+            url: 'images/Internacionais.png',
         },
         {
             id: 6,
-            text: 'teste6',
-            url: '#',
+            text: 'Personalize Sua Viagem!',
+            url: 'images/esfinge.png',
         },
     ];
 
