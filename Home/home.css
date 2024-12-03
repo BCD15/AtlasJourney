@@ -6,11 +6,18 @@
     --cor5: #FFFFFF;
 }
 
+
 body{
     background-color: #55ACE9;
     background-attachment: scroll;
 }
+main{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 
+}
 .geral{
     display: flex;
     justify-content: center;
@@ -169,3 +176,68 @@ button{
     margin: auto;
     justify-content: space-evenly;
 }
+
+
+/* carrossel css */
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }
+  
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+
+  }
+  
+  .slide {
+    min-width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+  
+  
+  .slide img {
+    width: 85%;
+    border-radius: 15px;
+    
+  }
+  .botão {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+    z-index: 10;
+    border-radius: 50%;
+  }
+
+  .botão:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev {
+    left: 15px;
+  }
+  
+  .next {
+    right: 15px;
+  }
