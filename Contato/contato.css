@@ -16,7 +16,15 @@ main {
 
 #left-content {
     width: 50%;
+    font-size: larger;
+    text-align: center;
 }
+
+#left-content p {
+    width: 70%;
+
+}
+
 
 #topTextBox {
     display: flex;
@@ -31,7 +39,7 @@ main {
 }
 
 #right-content {
-    width: 35%;
+    width: 37%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -45,8 +53,17 @@ main {
     padding-bottom: 20px;
 }
 
+#right-content form {
+    padding-top: 1%;
+}
+
+#DigiteseuNumero{
+    width: 60%;
+}
+
 h3 {
     color: var(--cor3);
+    margin-top: 0.5%;
 }
 
 #form {
@@ -54,7 +71,8 @@ h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-top: 5%;
+
 }
 
 #right-content input {
@@ -81,7 +99,6 @@ input::placeholder {
     border-radius: 12px;
     font-size: large;
     font-weight: bold;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -89,7 +106,7 @@ input::placeholder {
     main {
         flex-direction: column-reverse;
         flex-wrap: wrap;
-        margin-left: 10%;
+        margin-left: 3%;
         margin-top: 0.1%;
         }
  
@@ -111,17 +128,18 @@ input::placeholder {
 
     #right-content {
         border: none;
-        width: 80%;
+        width: 95%;
         height: none;
 
         }
 
     #form{
-        width: 85%;
+        width: 90%;
         display: flex;
         flex-direction: row;
         justify-content: none;
         margin-top: 1%;
+        align-items: center;
     }
 
     #topTextBox {
@@ -137,10 +155,48 @@ input::placeholder {
     }
     #left-content{
         border: none;
-        width: 75%;
+        width: 95%;
         height: none;
-        margin-top: 10%;
+        margin-top: 2%;
+        font-size: 140%;
+    }
+    
+    #left-content p {
+        width: 90%;
     }
 
+    #DDD {
+        width: 20%;
+    }
+
+    #DigiteseuNumero {
+        width: 70%;
+    }
+
+    #sendButton {
+        margin-top: 5%;
+        padding-right: 8%;
+        padding-left: 25%;
+
+    }
+
+    #sendButton span {
+        display: none;
+
+    }
+    .Send{
+        width: 10%;
+        height: 70%;
+    }
+
+    .menuIcon {
+        height: auto;
+        width: 13%;
+
+    }
+
+    .atlas{
+        margin-right: 15%;
+    }
 
 }

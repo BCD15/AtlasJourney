@@ -1,59 +1,60 @@
-    <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="contato.css" />
-        <link rel="stylesheet" href="../componentsStyle/index.css" />
-        <link rel="stylesheet" href="../componentsStyle/header.css" />
-        <link rel="stylesheet" href="../componentsStyle/footer.css" />
-        <title>Contato</title>
-    </head>
-    <body>
-        <div class="mh sla dispNone">
-            <div class="mh menu dispNone">
-                <ul class="mh menuLista dispNone">
-                    <li class="mh itemMenuLista dispNone">
-                        Home
-                    </li>
-                    <li class="mh itemMenuLista dispNone">
-                        Ofertas
-                    </li>
-                    <li class="mh itemMenuLista dispNone">
-                        Personalize
-                    </li>
-                    <li class="mh itemMenuLista dispNone">
-                        Quem Somos?
-                    </li>
-                    <li class="mh itemMenuLista dispNone">
-                        Contato
-                    </li>
-                    <li class="mh itemMenuLista dispNone">
-                        Login
-                    </li>
-                </ul>
-            </div>
-            <div class="mh backgroundMenu dispNone" onclick="menuHamburgOpen()"></div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="../componentsStyle/index.css">
+    <link rel="stylesheet" href="../componentsStyle/header.css">
+    <link rel="stylesheet" href="../componentsStyle/footer.css">
+    <script src="contato.js"></script>
+    <title>Contato</title>
+</head>
+<body>
+    <div class="mh sla dispNone">
+        <div class="mh menu dispNone">
+            <ul class="mh menuLista dispNone">
+                <li class="mh itemMenuLista dispNone">
+                    Home
+                </li>
+                <li class="mh itemMenuLista dispNone">
+                    Ofertas
+                </li>
+                <li class="mh itemMenuLista dispNone">
+                    Personalize
+                </li>
+                <li class="mh itemMenuLista dispNone">
+                    Quem Somos?
+                </li>
+                <li class="mh itemMenuLista dispNone">
+                    Contato
+                </li>
+                <li class="mh itemMenuLista dispNone">
+                    Login
+                </li>
+            </ul>
         </div>
-        <header>
-            <div class="cabeça">
-                <img id="menuIcon" class="menuIcon" src="Images/menuIcon.png" alt="menuIcon" onclick="menuHamburgOpen()"/>
-                <img class="atlas" src="Images/Logo.png" alt="atlas" />
-                <img class="perfil" src="Images/Login icon.JPG" alt="perfil" />
+        <div class="mh backgroundMenu dispNone" onclick="menuHamburgOpen()"></div>
+    </div>
+    <header>
+        <div class="cabeça">
+            <img id="menuIcon" class="menuIcon" src="Images/menuIcon.png" alt="menuIcon" onclick="menuHamburgOpen()"/>
+            <img class="atlas" src="Images/Logo.png" alt="atlas" />
+            <img class="perfil" src="Images/Login icon.png" alt="perfil" />
+        </div>
+        <div class="navbar">
+            <ul id="links">
+                <li><a class="navLinks" href="QuemSomos/quemSomos.html">Quem Somos?</a></li>
+                <li>|</li>
+                <li><a class="navLinks" href="Contato/contato.html">Contatos</a></li>
+                <li>|</li>
+                <li><a class="navLinks" href="TelaOfertas/oferta.html">Ofertas</a></li>
+            </ul>
+            <div id="searchBar">
+                <input type="text" name="searchInput" id="searchInput" placeholder="Pesquisar" />
+                <img class="lupa" src="Images/lupa.png" alt="lupa" />
             </div>
-            <div class="navbar">
-                <ul id="links">
-                    <li><a class="navLinks" href="../QuemSomos/quemSomos.html">Quem Somos?</a></li>
-                    <li>|</li>
-                    <li><a class="navLinks" href="../Contato/contato.html">Contatos</a></li>
-                    <li>|</li>
-                    <li><a class="navLinks" href="../TelaOfertas/oferta.html">Ofertas</a></li>
-                </ul>
-                <div id="searchBar">
-                    <input type="text" name="searchInput" id="searchInput" placeholder="Pesquisar" />
-                    <img class="lupa" src="Images/lupa.png" alt="lupa" />
-                </div>
-            </div>
+        </div>
     </header>
     <main>
         <div id="left-content">
@@ -62,23 +63,23 @@
                     Preencha o formulário e aguarde que um de nossos atendentes entrará contato.
                 </p>
             </div>
-            <div style="text-align: center">
-                <img class="elevador" src="Images/elevador-lacerda.jpg" width="80%" height="45%" style="border-radius: 5%; margin-bottom: 3%;">
+            <div style="text-align: center; height: 73%;">
+                <img class="elevador" src="Images/elevador-lacerda.jpg" width="100%" height="100%" style="border-radius: 5%; margin-bottom: 3%;">
             </div>
         </div>
         <div id="right-content">
-            <h3 style="margin-top: 5%; margin-bottom: 1%;"> INFORME SEUS DADOS</h3>
-            <div id="form" style="margin-top: top;">
+            <h3>INFORME SEUS DADOS</h3>
+            <div id="form">
                 <input id="Nome Completo" type="text" placeholder="  Nome Completo" style="width: 100%;">
                 <input id="CPF" type="text" placeholder="  CPF" style="width: 100%;">
                 <input id="E-mail" type="text" placeholder="  E-mail" style="width: 100%;">
-                <input id="DDD" type="text" placeholder="  DDD" style="width: 25%;">
-                <input id="Digite_seu_Numero" type="text" placeholder="  Digite seu Número" style="width: 70%;">
+                <input id="DDD" type="text" placeholder="  DDD" >
+                <input id="DigiteseuNumero" type="text" placeholder="  Digite seu Número">
             </div>
             <button id="sendButton">
                 <span></span>
                 <p>CONFIRMAR</p>
-                <img src="Images/seta.PNG" width="5%" height="100%" style="margin: 5%;">
+                <img class="Send" src="Images/seta.PNG" width="5%" height="100%" style="margin: 5%;">
             </button>
         </div>
     </main>
@@ -88,16 +89,16 @@
             <img id="facebookIcon" src="Images/facebookIconFooter.png" alt="" width="30px" height="30px">
         </div>
         <div style="display: flex; flex-direction: row; width: 78%; justify-content: center;">
-            <p id="direitos">₢ AtlasJouney</p>
+            <p id="direitos">₢AtlasJourney</p>
         </div>
         <div style="display: flex; flex-direction: row; width: 11%; justify-content: space-evenly; margin-top: 7px;">
             <picture>
-                <source srcset="Images/facebookIconFooter.png" media="(max-width: 1092px)">
-                <img src="images/phoneIcon.png" alt="" width="30px" height="30px">
+                <source srcset="Images/phoneIcon.png" media="(max-width: 1092px)">
+                <img src="Images/phoneIcon.png" alt="" width="30px" height="30px">
             </picture>
-            <p id="telefone-number" >+55 (47) 99999-9999</p>
+            <p id="telefone-number" >+55 47 99999-9999</p>
         </div>
     </footer>
 </body>
-<script src="contato.html"></script>
+<script src="contato.js"></script>
 </html>
