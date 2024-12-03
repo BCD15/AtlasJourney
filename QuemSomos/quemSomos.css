@@ -36,3 +36,20 @@ main{
 p {
     margin: 10px;
 }
+
+@media screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #left-content {
+        width: 85%;
+        margin: auto;
+    }
+
+    #right-content {
+        width: 85%;
+        margin: auto;
+    }
+}
