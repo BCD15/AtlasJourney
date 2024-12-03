@@ -98,10 +98,10 @@ main {
 @media screen and (max-width: 425px) {
     main {
         display: flex;
-        flex-direction: column; /* Organiza os elementos verticalmente */
+        flex-direction: column;
         flex-wrap: nowrap;
         width: 95%;
-        height: auto; /* Ajusta para altura dinâmica */
+        height: auto;
         padding: 0;
         box-sizing: border-box;
         margin-bottom: 0px;
