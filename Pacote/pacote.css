@@ -99,11 +99,12 @@ main {
         box-sizing: border-box;
         margin-bottom: 0px;
         max-width: 100%;
-        margin-left: 0;
+        margin-left: -9px;
+        margin-top: -3%;
     }
 
     .left-content, .right-content {
-        display: none;
+        display: none;  
     }
 
     .mobile-content{
@@ -112,13 +113,18 @@ main {
         flex-wrap: wrap;
         background-color: var(--cor2);
         justify-content: center;
-        margin-left: 5%;
+        margin-left: 4%;
         border-radius: 20px;
         margin-top: 5%;
     }
     .popup{
-        margin-top: 10%;
+        margin-top: 5%;
         margin-right: 16%;
     }
-
+    footer {
+        margin-bottom: -36%;
+    }
+    header {
+        margin-top: 10%;
+    }
 }
