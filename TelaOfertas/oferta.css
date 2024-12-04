@@ -2,6 +2,10 @@ body {
     background-color: #55ACE9;
 }
 
+.overHidden {
+    overflow: hidden;
+}
+
 .trianguloa {
     border-left: 98.8vw solid var(--cor1);
     border-top: 100px solid var(--cor5);
@@ -66,7 +70,7 @@ button {
     background-color: var(--cor2);
     border: 1px solid var(--cor2);
     border-radius: 40px;
-    width: 300px;
+    width: 23%;
     overflow: hidden;
 }
 
@@ -130,15 +134,12 @@ footer {
 @media screen and (max-width: 1092px) {
     h1 {
         font-size: 30px;
-        margin-top: 70px;
-        transform: translateX(45px);
+        margin-top: 0px;
+        transform: translateX(0px);
     }
 
     .tituloOferta {
-        margin: 0;
-        width: 100%;
-        text-align: center;
-
+        width: 85%;
     }
 
     .card-container {
@@ -149,8 +150,7 @@ footer {
     }
 
     .card {
-        width: 60%;
-
+        width: 30%;
     }
 
     .card-description {
@@ -158,6 +158,12 @@ footer {
     }
 
     .botao {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .card {
         width: 60%;
     }
 }

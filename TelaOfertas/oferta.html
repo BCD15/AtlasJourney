@@ -15,22 +15,22 @@
         <div class="mh menu dispNone">
             <ul class="mh menuLista dispNone">
                 <li class="mh itemMenuLista dispNone">
-                    Home
+                    <a href="../Home/index.html">Home</a>
                 </li>
                 <li class="mh itemMenuLista dispNone">
-                    Ofertas
+                    <a href="../TelaOfertas/oferta.html">Ofertas</a>
                 </li>
                 <li class="mh itemMenuLista dispNone">
-                    Personalize
+                    <a href="../Personalize/personalize.html">Personalize</a>
                 </li>
                 <li class="mh itemMenuLista dispNone">
-                    Quem Somos?
+                    <a href="../QuemSomos/quemSomos.html">Quem Somos?</a>
                 </li>
                 <li class="mh itemMenuLista dispNone">
-                    Contato
+                    <a href="../Contato/contato.html">Contato</a>
                 </li>
                 <li class="mh itemMenuLista dispNone">
-                    Login
+                    <a href="../Login/login.html">Login</a>
                 </li>
             </ul>
         </div>
@@ -39,7 +39,7 @@
     <header>
         <div class="cabeça">
             <img id="menuIcon" class="perfil" src="./img/Nav/menuIcon.png" alt="logo" onclick="menuHamburgOpen()"/>
-            <img class="atlas" src="./img/Nav/Logo.png" alt="Nome" />
+            <img class="atlas" src="./img/Nav/Logo.png" onclick="window.location.href='../Home/'" alt="Nome" />
             <img class="perfil" src="./img/Nav/Login icon.png" alt="logo" />
         </div>
         <div class="navbar">
@@ -73,7 +73,7 @@
         <div class="tituloOferta">
             <h1>Oferta de Voos</h1>
         </div>
-        <div class="card">
+        <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
             <img src="./img/Voos/imagem1.png" alt="Imagem do Card">
             <div class="card-content">
                 <h2 class="card-title">Voo para Londres</h2>
@@ -88,7 +88,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
             <img src="./img/Voos/imagem2.png" alt="Imagem do Card">
             <div class="card-content">
                 <h2 class="card-title">Voo para RJ</h2>
@@ -103,7 +103,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
             <img src="./img/Voos/imagem3.png" alt="Imagem do Card">
             <div class="card-content">
                 <h2 class="card-title">Voo para Nova York</h2>
@@ -124,7 +124,7 @@
         <div class="tituloOferta">
             <h1>Oferta de Hotéis</h1>
         </div>
-        <div class="card">
+        <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
             <img src="./img/Hoteis/imagem1.png" alt="Imagem do Card">
             <div class="card-content">
                 <h2 class="card-title">Hotel 3 estrelas com café da manhã</h2>
@@ -138,7 +138,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
             <img src="./img/Hoteis/imagem2.png" alt="Imagem do Card">
             <div class="card-content">
                 <h2 class="card-title">Hotel 4 estrelas com café da manhã</h2>
@@ -152,7 +152,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
             <img src="./img/Hoteis/imagem3.png" alt="Imagem do Card">
             <div class="card-content">
                 <h2 class="card-title">Hotel 5 estrelas com café da manhã</h2>
@@ -168,11 +168,11 @@
         </div>
     </div>
     <!--OFERTA DE PRAIAS-->
-    <div class="card-container">
+    <div class="card-container" id="Praias">
         <div class="tituloOferta">
             <h1>Oferta de Praias</h1>
         </div>
-        <div class="card">
+        <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
             <img src="./img/Praias/1º imagem.png" alt="Imagem do Card">
             <div class="card-content">
                 <h2 class="card-title">Nordeste | 9 dias</h2>
@@ -191,7 +191,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
             <img src="./img/Praias/2º imagem.png" alt="Imagem do Card">
             <div class="card-content">
                 <h2 class="card-title">Nordeste | 7 dias</h2>
@@ -210,7 +210,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
             <img src="./img/Praias/3° imagem.png" alt="Imagem do Card">
             <div class="card-content">
                 <h2 class="card-title">Rio de Janeiro | 4 dias</h2>
@@ -233,11 +233,11 @@
     </div>
 
     <!--CAMPO-->
-    <div class="card-container">
+    <div class="card-container" id="Campo">
         <div class="tituloOferta">
             <h1>Oferta de Campo</h1>
         </div>
-        <div class="card">
+        <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
             <img src="./img/Campo/1° imagem.png" alt="Imagem do Card">
             <div class="card-content">
                 <h2 class="card-title">Campos do Jordão</h2>
@@ -255,7 +255,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
             <img src="./img/Campo/2° imagem.png" alt="Imagem do Card">
             <div class="card-content">
                 <h2 class="card-title">Gramado e Canela</h2>
@@ -273,7 +273,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
             <img src="./img/Campo/3° imagem.png" alt="Imagem do Card">
             <div class="card-content">
                 <h2 class="card-title">Serra Catarinense</h2>
@@ -294,11 +294,11 @@
         </div>
     </div>
     <!--AVENTURA-->
-    <div class="card-container">
+    <div class="card-container" id="Aventura">
         <div class="tituloOferta">
             <h1>Aventura</h1>
         </div>
-        <div class="card">
+        <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
             <img src="./img/Aventura/1° imagem.png" alt="Imagem do Card">
             <div class="card-content">
                 <h2 class="card-title">Beto Carrero | Balneário Camboriú</h2>
@@ -316,7 +316,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
             <img src="./img/Aventura/2 imagem.png" alt="Imagem do Card">
             <div class="card-content">
                 <h2 class="card-title">Minas Gerais</h2>
@@ -335,7 +335,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
             <img src="./img/Aventura/3° imagem.png" alt="Imagem do Card">
             <div class="card-content">
                 <h2 class="card-title">Bonito | MS</h2>
@@ -356,11 +356,11 @@
         </div>
     </div>
     <!--NACIONAIS-->
-    <div class="card-container">
+    <div class="card-container" id="Nacionais">
         <div class="tituloOferta">
             <h1>Nacionais</h1>
         </div>
-        <div class="card">
+        <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
             <img src="./img/Nacoinais/1° imagem.png" alt="Imagem do Card">
             <div class="card-content">
                 <h2 class="card-title">Foz do Iguaçu</h2>
@@ -379,7 +379,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
             <img src="./img/Nacoinais/2° imagem.png" alt="Imagem do Card">
             <div class="card-content">
                 <h2 class="card-title">São Paulo</h2>
@@ -398,7 +398,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
             <img src="./img/Nacoinais/3 imagem.png" alt="Imagem do Card">
             <div class="card-content">
                 <h2 class="card-title">Florianópolis</h2>
@@ -419,11 +419,11 @@
         </div>
     </div>
         <!--INTERNACIONAIS-->
-        <div class="card-container">
+        <div class="card-container" id="Internacionais">
             <div class="tituloOferta">
                 <h1>Internacionais</h1>
             </div>
-            <div class="card">
+            <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
                 <img src="./img/Internacionais/1° imagem.png" alt="Imagem do Card">
                 <div class="card-content">
                     <h2 class="card-title">Chile | Santiago, Lagos do Chile e Torres del Paine</h2>
@@ -441,7 +441,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
                 <img src="./img/Internacionais/2 imagem.png" alt="Imagem do Card">
                 <div class="card-content">
                     <h2 class="card-title">EUA | San Francisco, Los Angeles, Chicago e Nova York</h2>
@@ -459,7 +459,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" onclick="window.location.href= !sessionStorage.getItem('isLoggedin') ? '../Login/login.html' : '../Pacote/pacote.html'">
                 <img src="./img/Internacionais/3 imagem.png" alt="Imagem do Card">
                 <div class="card-content">
                     <h2 class="card-title">Tour Europa | 15 dias</h2>

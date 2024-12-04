@@ -22,7 +22,6 @@ main {
 
 #left-content p {
     width: 70%;
-
 }
 
 
@@ -104,22 +103,15 @@ input::placeholder {
 
 @media screen and (max-width: 1092px){
     main {
+        display: flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
-        margin-left: 3%;
+        align-items: center;
         margin-top: 0.1%;
     }
 
-    .perfil {
+    .imgDiv {
         display: none;
-    }
-
-    .navbar, .navLinks, .Deadline {
-        display: none;
-    }
-
-    .searchBar {
-        padding-bottom: 40%;
     }
 
     .elevador {
@@ -188,15 +180,4 @@ input::placeholder {
         width: 10%;
         height: 70%;
     }
-
-    .menuIcon {
-        height: auto;
-        width: 13%;
-
-    }
-
-    .atlas{
-        margin-right: 15%;
-    }
-
 }

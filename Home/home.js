@@ -8,6 +8,17 @@ function menuHamburgOpen() {
   });
 }
 
+function perguntaOpen(id, event) {
+  const resposta = document.querySelectorAll(".respostaBox");
+
+  if (id >= 0 && id < resposta.length) {
+    resposta[id].classList.toggle("dispNone");
+
+    const img = event.target;
+    img.classList.toggle("imgRotate")
+  }
+}
+
 function GetCardItem() {
   const cardItem = JSON.parse(localStorage.getItem("cardItens"));
   const cardItem0 = cardItem[0]
@@ -22,6 +33,8 @@ function GetCardItem() {
 function RenderCard(item) {
   var container = document.querySelector(".container");
 
+  const linkHref = item.id === 6 ? `../../Personalize/personalize.html` : `../../TelaOfertas/oferta.html?id=${item.id}#${item.text}`;
+
   container.innerHTML += `
         <div class="card">
           <div class="img">
@@ -29,21 +42,21 @@ function RenderCard(item) {
           </div>
           <div class="content">
               <p class="p1">${item.text}</p>
-              <a class="a" href="../../Pacote/pacote.html?id=${item.id}">Ler mais</a>
-          </div>  
+              <a class="a" href="${linkHref}">Ler mais</a>
+          </div>
         </div>
       `;
 }
 
 GetCardItem();
 
-
 let currentIndex = 0;
 
 function showSlide(index) {
   const slides = document.querySelectorAll('.slide');
-  const totalSlides = slides.length;
-  
+  const slidesLength = slides.length;
+  const totalSlides = slidesLength - 2;
+
   if (index >= totalSlides) {
     currentIndex = 0;
   } else if (index < 0) {
@@ -66,6 +79,7 @@ function prevSlide() {
 
 // Inicializa o carrossel
 showSlide(currentIndex);
+console.log("🚀 ~ currentIndex:", currentIndex)
 
 const slides = document.querySelectorAll('.slide');
 console.log(slides); // Verificar se todas as slides estão sendo identificadas

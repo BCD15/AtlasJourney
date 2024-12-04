@@ -21,6 +21,7 @@ function Send() {
         email : email,
         password : password,
     }
+
     if(name == "admin") {
         if(localStorage.getItem("accounts") === null) {
             localStorage.setItem("accounts", JSON.stringify([account]));
@@ -36,6 +37,7 @@ function Send() {
 
             localStorage.setItem("accounts", JSON.stringify([...JSON.parse(localStorage.getItem("accounts")), account,]));
         }
+
         Login()
         window.location='../Home/index.html'
     } else {
@@ -61,6 +63,7 @@ function Send() {
                 localStorage.setItem("accounts", JSON.stringify([...JSON.parse(localStorage.getItem("accounts")), account,]));
             }
         }
+        
         Login()
         window.location='../Home/index.html';
     }

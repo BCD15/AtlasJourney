@@ -16,22 +16,22 @@
         <div class="mh menu dispNone">
             <ul class="mh menuLista dispNone">
                 <li class="mh itemMenuLista dispNone">
-                    Home
+                    <a href="../Home/index.html">Home</a>
                 </li>
                 <li class="mh itemMenuLista dispNone">
-                    Ofertas
+                    <a href="../TelaOfertas/oferta.html">Ofertas</a>
                 </li>
                 <li class="mh itemMenuLista dispNone">
-                    Personalize
+                    <a href="../Personalize/personalize.html">Personalize</a>
                 </li>
                 <li class="mh itemMenuLista dispNone">
-                    Quem Somos?
+                    <a href="../QuemSomos/quemSomos.html">Quem Somos?</a>
                 </li>
                 <li class="mh itemMenuLista dispNone">
-                    Contato
+                    <a href="../Contato/contato.html">Contato</a>
                 </li>
                 <li class="mh itemMenuLista dispNone">
-                    Login
+                    <a href="../Login/login.html">Login</a>
                 </li>
             </ul>
         </div>
@@ -40,7 +40,7 @@
         <header>
         <div class="cabeça">
             <img id="menuIcon" class="perfil" src="./Images/menuIcon.png" alt="logo" onclick="menuHamburgOpen()"/>
-            <img class="atlas" src="./Images/Logo.png" alt="Nome" />
+            <img class="atlas" src="./Images/Logo.png" onclick="window.location.href='../Home/'" alt="Nome" />
             <img class="perfil" src="./Images/Login icon.png" alt="logo" />
         </div>
         <div class="navbar">
@@ -60,24 +60,26 @@
     <main>
         <div class="carousel-container">
             <div class="carousel">
-            
-            <div class="slide">
+                <div class="slide">
+                    <img src="./Images/ImageCarroussel3.png" alt="Grande Muralha da China">
+                </div>
+                <div class="slide">
                     <img src="./Images/ImageCarroussel1.png" alt="Coliseu de Roma">
-            </div>
-            <div class="slide">
+                </div>
+                <div class="slide">
                     <img src="./Images/ImageCarroussel2.png" alt="Praia paradisíaca">
-            </div>
-            <div class="slide">
-                <img src="./Images/ImageCarroussel3.png" alt="Grande Muralha da China">
+                </div>
+                <div class="slide">
+                    <img src="./Images/ImageCarroussel3.png" alt="Grande Muralha da China">
+                </div>
+                <div class="slide">
+                    <img src="./Images/ImageCarroussel1.png" alt="Coliseu de Roma">
                 </div>
             </div>
 
             <button class="prev botão"  onclick="prevSlide()">❮</button>
             <button class="next botão" onclick="nextSlide()">❯</button>
         </div>
-    
-
-
         <div class="trianguloa"></div>
         <div class="back"></div>
         <div class="geral">
@@ -119,6 +121,54 @@
                 </div>
                 <div class="block1" style="margin-top: 40px;">
                     <h2>Quando e como fazer o web check-in?</h2>
+                    <p>
+                        Geralmente inicia entre 72 e 24 horas antes do seu voo. Mas não se preocupe,
+                        quando estiver disponível para o seu voo, avisaremos por e-mail.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="perguntasMobile">
+            <div class="trianguloa"></div>
+            <div class="perguntaBox">
+                <div class="perguntaText">
+                    <p>Quais as formas de pagamento disponíveis?</p>
+                    <img src="Images/Polygon.png" alt="" onclick="perguntaOpen(0, event)">
+                </div>
+                <div class="respostaBox dispNone">
+                    <p>Boleto, Cartão de Crédito em até 24x.</p>
+                </div>
+            </div>
+            <div class="perguntaBox">
+                <div class="perguntaText">
+                    <p>O que é um vouncher?</p>
+                    <img src="Images/Polygon.png" alt="" onclick="perguntaOpen(1, event)">
+                </div>
+                <div class="respostaBox dispNone">
+                    <p>
+                        O voucher, chamado de Documento da Viagem, é um documento comprovatório que deverá ser apresentado
+                        durante a viagem, seja nos aeroportos, translado, terminais de ônibus, portos ou hotéis.
+                    </p>
+                </div>
+            </div>
+            <div class="perguntaBox">
+                <div class="perguntaText">
+                    <p>Consigo alterar as datas dos meus pacotes?</p>
+                    <img src="Images/Polygon.png" alt="" onclick="perguntaOpen(2, event)">
+                </div>
+                <div class="respostaBox dispNone">
+                    <p>
+                        Qualquer alteração fica sujeita às regras do fornecedor, aplicação de multas e disponibilidade
+                        do novo período escolhido.
+                    </p>
+                </div>
+            </div>
+            <div class="perguntaBox">
+                <div class="perguntaText">
+                    <p>Quando e como fazer o web check-in?</p>
+                    <img src="Images/Polygon.png" alt="" onclick="perguntaOpen(3, event)">
+                </div>
+                <div class="respostaBox dispNone">
                     <p>
                         Geralmente inicia entre 72 e 24 horas antes do seu voo. Mas não se preocupe,
                         quando estiver disponível para o seu voo, avisaremos por e-mail.

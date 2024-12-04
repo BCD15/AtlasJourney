@@ -15,22 +15,22 @@
         <div class="mh menu dispNone">
             <ul class="mh menuLista dispNone">
                 <li class="mh itemMenuLista dispNone">
-                    Home
+                    <a href="../Home/index.html">Home</a>
                 </li>
                 <li class="mh itemMenuLista dispNone">
-                    Ofertas
+                    <a href="../TelaOfertas/oferta.html">Ofertas</a>
                 </li>
                 <li class="mh itemMenuLista dispNone">
-                    Personalize
+                    <a href="../Personalize/personalize.html">Personalize</a>
                 </li>
                 <li class="mh itemMenuLista dispNone">
-                    Quem Somos?
+                    <a href="../QuemSomos/quemSomos.html">Quem Somos?</a>
                 </li>
                 <li class="mh itemMenuLista dispNone">
-                    Contato
+                    <a href="../Contato/contato.html">Contato</a>
                 </li>
                 <li class="mh itemMenuLista dispNone">
-                    Login
+                    <a href="../Login/login.html">Login</a>
                 </li>
             </ul>
         </div>
@@ -39,7 +39,7 @@
     <header>
         <div class="cabeça">
             <img id="menuIcon" class="perfil" src="./Images/menuIcon.png" alt="logo" onclick="menuHamburgOpen()"/>
-            <img class="atlas" src="./Images/Logo.png" alt="Nome" />
+            <img class="atlas" src="./Images/Logo.png" onclick="window.location.href='../Home/'" alt="Nome" />
             <img class="perfil" src="./Images/Login icon.png" alt="logo" />
         </div>
         <div class="navbar">
@@ -59,9 +59,9 @@
     <main>
         <div class="left-content">
             <h2 style="color: #A47ADA; margin-left: 25%;  padding-top: 1%; padding-bottom: 1%;">Rio de Janeiro, a cidade maravilhosa!</h2>
-            <img src="Images/Rio-de-janeiro1.png"   alt=""  style="height: auto; width: 104%; border-radius: 30px; margin-left: 0%;"/>
+            <img src="Images/Rio-de-janeiro1.png"   alt=""  style="height: auto; width: 100%; border-radius: 30px; margin-left: 0%;"/>
             <div class="bottom-content">
-                <ul class=";"> 
+                <ul class=";">
                 <h2 style="color: #A47ADA; margin-left: 30%; font-weight: bold;">4 dias no RJ: O que fazer?</h2>
                 <div class="split-list">
                     <li style="color: #A47ADA; font-size: 15px; text-align: left; list-style: none; ">Dia 1: Cristo redentor e pão de açúcar;</li>
@@ -79,10 +79,10 @@
                 <li style="color: #BFB8FF; font-size: 22px; margin-left: 22%; text-align: center; padding-left: 4%; padding-bottom: 6px;">Transfer hotel x aeroporto;</li>
                 <li style="color: #BFB8FF; font-size: 22px; margin-left: 22%; padding-bottom: 6px;text-align: center;">City tour;</li>
                 <li style="color: #BFB8FF; font-size: 22px; margin-left: 22%; padding-bottom: 5px; text-align: center; padding-left: 6%;">Passeios: bondinho e pão de açúcar</li>
-                <li style="color: #BFB8FF; font-size: 22px; margin-left: 22%; padding-left: 10%; padding-bottom: 5px;">Pacote para 2 pessoas</li>            
+                <li style="color: #BFB8FF; font-size: 22px; margin-left: 22%; padding-left: 10%; padding-bottom: 5px;">Pacote para 2 pessoas</li>
                 <li style="color: #A47ADA; font-size:  28px; font-weight: bold; margin-top: 10%; margin-bottom: -5%; margin-left: 19%; list-style: none;;"> A partir de R$3990,90</h1>
             </ul>
-            <button class="popup" ><p id="txtbtn">Assinar pacote</p><img src="Images/right-arrow 1.png";/></button>
+            <button onclick="alert('Compra realizada!')" class="popup" ><p id="txtbtn">Assinar pacote</p><img src="Images/right-arrow 1.png";/></button>
             </div>
             <div class="mobile-content">
                 <h2 style="color: #A47ADA; margin-left: 0%; text-align: center; ">Rio de Janeiro, a cidade maravilhosa!</h2>
@@ -93,11 +93,10 @@
                     <li style="color: #BFB8FF; font-size: 18px; margin-bottom: 10px; text-align: left;">Transfer hotel x aeroporto;</li>
                     <li style="color: #BFB8FF; font-size: 18px; margin-bottom: 5px;text-align: left;">City tour;</li>
                     <li style="color: #BFB8FF; font-size: 18px; margin-bottom: 5px; text-align: left; padding-left: 0%;">Passeios: bondinho e pão de açúcar</li>
-                    <li style="color: #BFB8FF; font-size: 18px; padding-left: 0%; text-align: left;">Pacote para 2 pessoas</li>            
+                    <li style="color: #BFB8FF; font-size: 18px; padding-left: 0%; text-align: left;">Pacote para 2 pessoas</li>
                     <li style="color: #A47ADA; font-size: 22px; font-weight: bold;margin-top: 10%; margin-bottom: -5%; margin-left: 10%; list-style: none;;"> A partir de R$3990,90</h1>
                 </ul>
-                <button class="popup" ><p id="txtbtn">Assinar Pacote</p><img src="Images/right-arrow 1.png";/></button>    
-
+                <button class="popup" onclick="() => {alert('Compra realizada!')}"><p id="txtbtn">Assinar Pacote</p><img src="Images/right-arrow 1.png";/></button>
             </div>
     </main>
     <footer>

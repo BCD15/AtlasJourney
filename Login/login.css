@@ -7,7 +7,7 @@
 }
 
 body {
-    height: 100vh; /* Ocupa a altura total da janela */
+    height: 100vh;
     background-color: var(--cor1);
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: "Inter", sans-serif;
-    overflow-x: hidden; /* Evita scroll horizontal */
+    overflow-x: hidden;
 }
 
 main {
@@ -27,10 +27,11 @@ main {
     width: 40%;
     padding: 30px;
     padding-bottom: 0%;
-    box-sizing: border-box; /* Inclui padding na largura */
+    box-sizing: border-box;
     margin-top: 60px;
     margin-bottom: 50px;
-    max-width: 100%; /* Evita estouro horizontal */
+    max-width: 100%;
+    max-height: 80%;
 }
 
 #left-content {
@@ -39,7 +40,7 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    box-sizing: border-box; /* Inclui borders na largura */
+    box-sizing: border-box;
 }
 
 #loginIcon {
@@ -99,12 +100,10 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0;
-    /* background-color: red; */
 }
 
 #logoImg {
     width: 70%;
-    /* background-color: blue; */
 }
 
 @media screen and (max-width: 1092px) {
@@ -178,8 +177,8 @@ main {
         width: 90%;
     }
 
-    /* footer {
+    footer {
         position: absolute;
         bottom: 0;
-    } */
+    }
 }
