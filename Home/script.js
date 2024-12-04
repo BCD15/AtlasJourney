@@ -3,32 +3,32 @@ function dados() {
         {
             id: 1,
             text: 'Aventura',
-            url: 'images/Aventura.webp',
+            url: 'Images/Aventura.webp',
         },
         {
             id: 2,
             text: 'Campo',
-            url: 'images/Campo.webp',
+            url: 'Images/Campo.webp',
         },
         {
             id: 3,
             text: 'Praias',
-            url: 'images/Praias_1.webp',
+            url: 'Images/Praias_1.webp',
         },
         {
             id: 4,
             text: 'Nacionais',
-            url: 'images/Nacionais.png',
+            url: 'Images/Nacionais.png',
         },
         {
             id: 5,
             text: 'Internacionais',
-            url: 'images/Internacionais.png',
+            url: 'Images/Internacionais.png',
         },
         {
             id: 6,
             text: 'Personalize Sua Viagem!',
-            url: 'images/esfinge.png',
+            url: 'Images/esfinge.png',
         },
     ];
 
