@@ -33,7 +33,7 @@ function GetCardItem() {
 function RenderCard(item) {
   var container = document.querySelector(".container");
 
-  const linkHref = item.id === 6 ? `../Personalize/personalize.html` : `../TelaOfertas/oferta.html?id=${item.id}#${item.text}`;
+  const linkHref = item.id === 6 ? `../AtlasJourney/Personalize/personalize.html` : `../AtlasJourney/TelaOfertas/oferta.html?id=${item.id}#${item.text}`;
 
   container.innerHTML += `
         <div class="card">
