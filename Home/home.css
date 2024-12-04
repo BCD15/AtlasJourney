@@ -110,7 +110,6 @@ main{
 .trianguloa{
     border-left: 98.8vw solid var(--cor1);
     border-top: 170px solid var(--cor5);
-    /* background-color: red; */
 }
 
 .triangulob{
@@ -127,6 +126,8 @@ main{
     color: #A47ADA ;
     padding: 30px;
     text-align: center;
+    border-top: solid 2px var(--cor3);
+    border-bottom: solid 2px var(--cor3);
 }
 
 .hInput{
@@ -149,9 +150,11 @@ button{
     transition: background-color 0.3s;
 }
 
+
+
 .perguntas{
     text-align: center;
-    background-color: white;
+    background-color: var(--cor5);
     font-family: "Inter", sans-serif;
     color:#A47ADA;
     padding-top: 30px;
@@ -160,7 +163,7 @@ button{
 .block1{
     background-color: var(--cor1);
     color: var(--cor5);
-    border: solid 1px black;
+    border: solid 2px var(--cor3);
     border-radius: 28px;
     width: 45%;
     padding: 20px;
@@ -176,7 +179,6 @@ button{
     margin: auto;
     justify-content: space-evenly;
 }
-
 
 /* carrossel css */
 
@@ -241,3 +243,19 @@ button{
   .next {
     right: 15px;
   }
+
+@media screen and (max-width:1092px) {
+    main{
+        width: 100%;
+        margin: 0%;
+        text-align: center;
+    }
+
+    .card img{
+        width: 80%;
+    }
+
+    .bt{
+        width: 60%;
+    }
+}
