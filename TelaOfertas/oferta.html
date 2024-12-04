@@ -14,11 +14,36 @@
 <body>
 
 <div>
+    <div class="mh sla dispNone">
+        <div class="mh menu dispNone">
+            <ul class="mh menuLista dispNone">
+                <li class="mh itemMenuLista dispNone">
+                    Home
+                </li>
+                <li class="mh itemMenuLista dispNone">
+                    Ofertas
+                </li>
+                <li class="mh itemMenuLista dispNone">
+                    Personalize
+                </li>
+                <li class="mh itemMenuLista dispNone">
+                    Quem Somos?
+                </li>
+                <li class="mh itemMenuLista dispNone">
+                    Contato
+                </li>
+                <li class="mh itemMenuLista dispNone">
+                    Login
+                </li>
+            </ul>
+        </div>
+        <div class="mh backgroundMenu dispNone" onclick="menuHamburgOpen()"></div>
+    </div>
     <header>
         <div class="cabeça">
-            <img id="menu" class="perfil" src="./Images/menuIcon.png" alt="logo" />
-            <img class="atlas" src="./Images/Logo.png" alt="Nome" />
-            <img class="perfil" src="./Images/Login icon.png" alt="logo" />
+            <img id="menuIcon" class="perfil" src="./img/Nav/menuIcon.png" alt="logo" onclick="menuHamburgOpen()"/>
+            <img class="atlas" src="./img/Nav/Logo.png" alt="Nome" />
+            <img class="perfil" src="./img/Nav/Login icon.png" alt="logo" />
         </div>
         <div class="navbar">
             <ul id="links">
@@ -41,7 +66,7 @@
             <div class="inputs"></div>
             <input class="Nome" type="text" name="Nome" placeholder="Nome">
             <input class="email" type="email" name="email" placeholder="Email">
-            <botaoAssinar"><button type="submit">Assinar</button></li>
+            <button class="botao" type="submit">Assinar</button></li>
             </div>
         </div>
     </div>
@@ -170,10 +195,10 @@
             <h2 class="card-title">Nordeste | 9 dias</h2>
             <p class="card-description">Saídas de São Paulo, Curitiba e Florianópolis</p>
             <ul class="card-description"></ul>
-            <li style="margin: 10px;">Diárias em Hotel 4 estrelas, com café da manhã;</li>
-                <li style="margin: 10px;">Transfer Hotel x AeroportoBahia: 3 dias em Salvador e Praia do Forte;</li>
-                <li style="margin: 10px;">Pernambuco: 3 dias em Recife e Porto de Galinhas;</li>
-                <li style="margin: 10px;">Alagoas: 3 dias em Maceió e São Miguel dos Milagres;</li>
+            <li style="margin: 10px;" class="card-description">Diárias em Hotel 4 estrelas, com café da manhã;</li>
+                <li style="margin: 10px;" class="card-description">Transfer Hotel x AeroportoBahia: 3 dias em Salvador e Praia do Forte;</li>
+                <li style="margin: 10px;" class="card-description">Pernambuco: 3 dias em Recife e Porto de Galinhas;</li>
+                <li style="margin: 10px;" class="card-description">Alagoas: 3 dias em Maceió e São Miguel dos Milagres;</li>
             <div class="preço">
                 <div class="infos">
                     <a href="#" class="card-button"><p>2 pessoas, a partir de</p></a>
@@ -239,9 +264,9 @@
             <h2 class="card-title">Campos do Jordão</h2>
             <p class="card-description">Saídas do Rio de Janeiro, Curitiba e Florianópolis</p>
             <ul class="card-description"></ul>
-                <li style="margin: 10px;">4 diárias em hotel 4 ou 5  estrelas, com café da manhã;</li>
-                <li style="margin: 10px;">Transfer hotel x aeroporto</li>
-                <li style="margin: 10px;">Incluso: City tour, passeio de trem e tour cervejaria baden baden</li>
+                <li style="margin: 10px;" class="card-description">4 diárias em hotel 4 ou 5  estrelas, com café da manhã;</li>
+                <li style="margin: 10px;" class="card-description">Transfer hotel x aeroporto</li>
+                <li style="margin: 10px;" class="card-description">Incluso: City tour, passeio de trem e tour cervejaria baden baden</li>
             
             <div class="preço">
                 <div class="infos">
@@ -259,9 +284,9 @@
             <h2 class="card-title">Gramado e Canela</h2>
             <p class="card-description">Saídas do Rio de Janeiro, São Paulo e Curitiba</p>
             <ul class="card-description"></ul>
-                <li style="margin: 10px;">5 Diárias em hotel 4 ou 5  estrelas, com café da manhã;</li>
-                <li style="margin: 10px;">Transfer hotel x aeroporto</li>
-                <li style="margin: 10px;">Passeios Inclusos: mini mundo, fábrica chocolate prawer</li>
+                <li style="margin: 10px;" class="card-description">5 Diárias em hotel 4 ou 5  estrelas, com café da manhã;</li>
+                <li style="margin: 10px;" class="card-description">Transfer hotel x aeroporto</li>
+                <li style="margin: 10px;" class="card-description">Passeios Inclusos: mini mundo, fábrica chocolate prawer</li>
             
             <div class="preço">
                 <div class="infos">
@@ -279,9 +304,9 @@
             <h2 class="card-title">Serra Catarinense</h2>
             <p class="card-description">Saídas de São Paulo e Rio de Janeiro</p>
             <ul class="card-description">
-                <li style="margin: 10px;">4 diárias em hotel 4 ou 5 estrelas, com café da manhã;</li>
-                <li style="margin: 10px;">Transfer hotel x aeroporto de Florianópolis;</li>
-                <li style="margin: 10px;">Passeios Inclusos: Beto Carreiro</li>
+                <li style="margin: 10px;" class="card-description">4 diárias em hotel 4 ou 5 estrelas, com café da manhã;</li>
+                <li style="margin: 10px;" class="card-description">Transfer hotel x aeroporto de Florianópolis;</li>
+                <li style="margin: 10px;" class="card-description">Passeios Inclusos: Beto Carreiro</li>
             </ul>
             
             <div class="preço">
@@ -299,7 +324,7 @@
 <!--AVENTURA-->
 <div class="card-container">
     <div class="tituloOferta">
-        <h1>Oferta de Aventura</h1>
+        <h1>Aventura</h1>
     </div>
     <div class="card">
         <img src="./img/Aventura/1° imagem.png" alt="Imagem do Card">
@@ -307,9 +332,9 @@
             <h2 class="card-title">Beto Carrero | Balneário Camboriú</h2>
             <p class="card-description">Saídas de São Paulo e Rio de Janeiro</p>
             <ul class="card-description"></ul>
-                <li style="margin: 10px;">4 diárias em hotel econômico com café da manhã;</li>
-                <li style="margin: 10px;">Transfer hotel x aeroporto de navegantes;</li>
-                <li style="margin: 10px;">Passaporte para sexta e sábado no parque;</li>
+                <li style="margin: 10px;" class="card-description">4 diárias em hotel econômico com café da manhã;</li>
+                <li style="margin: 10px;" class="card-description">Transfer hotel x aeroporto de navegantes;</li>
+                <li style="margin: 10px;" class="card-description">Passaporte para sexta e sábado no parque;</li>
             
             <div class="preço">
                 <div class="infos">
@@ -327,10 +352,10 @@
             <h2 class="card-title">Minas Gerais</h2>
             <p class="card-description">Saídas do Rio de Janeiro, São Paulo e Curitiba</p>
             <ul class="card-description"></ul>
-                <li style="margin: 10px;">Cidades históricas e Inhotim;</li>
-                <li style="margin: 10px;">5 Diárias em hotel 4 ou 5 estrelas, com café da manhã;</li>
-                <li style="margin: 10px;">Transfer hotel x aeroporto</li>
-                <li style="margin: 10px;">Conheça: Ouro Preto, Mariana, Inhotim, Tiradentes e São João Del Rei</li>
+                <li style="margin: 10px;" class="card-description">Cidades históricas e Inhotim;</li>
+                <li style="margin: 10px;" class="card-description">5 Diárias em hotel 4 ou 5 estrelas, com café da manhã;</li>
+                <li style="margin: 10px;" class="card-description">Transfer hotel x aeroporto</li>
+                <li style="margin: 10px;" class="card-description">Conheça: Ouro Preto, Mariana, Inhotim, Tiradentes e São João Del Rei</li>
             <div class="preço">
                 <div class="infos">
                     <a href="#" class="card-button"><p>2 pessoas, a partir de</p></a>
@@ -347,10 +372,10 @@
             <h2 class="card-title">Bonito | MS</h2>
             <p class="card-description">Saídas do Rio de Janeiro, São Paulo, Curitiba e Florianópolis</p>
             <ul class="card-description"></ul>
-                <li style="margin: 10px;">4 diárias em Hotel 4 ou 5 estrelas, com café da manhã;</li>
-                <li style="margin: 10px;">Transfer hotel x aeroporto</li>
-                <li style="margin: 10px">Tour pela gruta da lagoa azul</li>
-                <li style="margin: 10px;">Passeios inclusos: nascente azul: flutuação + Balneário e Porto da Ilha: bote + Balneário</li>
+                <li style="margin: 10px;" class="card-description">4 diárias em Hotel 4 ou 5 estrelas, com café da manhã;</li>
+                <li style="margin: 10px;" class="card-description">Transfer hotel x aeroporto</li>
+                <li style="margin: 10px" class="card-description">Tour pela gruta da lagoa azul</li>
+                <li style="margin: 10px;" class="card-description">Passeios inclusos: nascente azul: flutuação + Balneário e Porto da Ilha: bote + Balneário</li>
             <div class="preço">
                 <div class="infos">
                     <a href="#" class="card-button"><p>2 pessoas, a partir de</p></a>
@@ -366,7 +391,7 @@
 <!--NACIONAIS-->
 <div class="card-container">
     <div class="tituloOferta">
-        <h1>Ofertas Nacionais</h1>
+        <h1>Nacionais</h1>
     </div>
     <div class="card">
         <img src="./img/Nacoinais/1° imagem.png" alt="Imagem do Card">
@@ -374,9 +399,9 @@
             <h2 class="card-title">Foz do Iguaçu</h2>
             <p class="card-description">Saídas do Rio de Janeiro, São Paulo e Florianópolis</p>
             <p class="card-description"></ul>
-                <li style="margin: 10px;">5 diárias em hotel 4 ou 5  estrelas, com café da manhã;</li>
-                <li style="margin: 10px;">Transfer hotel x aeroporto;</li>
-                <li style="margin: 10px;">duty free na Argentina, tour de compras no Paraguai, Itaipu, Cataratas, Parque das Aves, dreamland e city Tour</li>
+                <li style="margin: 10px;" class="card-description">5 diárias em hotel 4 ou 5  estrelas, com café da manhã;</li>
+                <li style="margin: 10px;" class="card-description">Transfer hotel x aeroporto;</li>
+                <li style="margin: 10px;" class="card-description">duty free na Argentina, tour de compras no Paraguai, Itaipu, Cataratas, Parque das Aves, dreamland e city Tour</li>
             <div class="preço">
                 <div class="infos">
                     <a href="#" class="card-button"><p>2 pessoas, a partir de</p></a>
@@ -393,10 +418,10 @@
             <h2 class="card-title">São Paulo</h2>
             <p class="card-description">Saídas de Rio de Janeiro, Curitiba e Florianópolis</p>
             <ul class="card-description"></ul>
-                <li style="margin: 10px;">4 Diárias em Hotel 4 ou 5 estrelas, com café da manhã;</li>
-                <li style="margin: 10px;">Transfer hotel x aeroporto;</li>
-                <li style="margin: 10px;">City Tour;</li>
-                <li style="margin: 10px;">Tour pelos Estadios ( Neo Quimica Arena,Allianz Parque), Parque Ibirapuera, Hopy Hare,</li>
+                <li style="margin: 10px;" class="card-description">4 Diárias em Hotel 4 ou 5 estrelas, com café da manhã;</li>
+                <li style="margin: 10px;" class="card-description">Transfer hotel x aeroporto;</li>
+                <li style="margin: 10px;" class="card-description">City Tour;</li>
+                <li style="margin: 10px;" class="card-description">Tour pelos Estadios ( Neo Quimica Arena,Allianz Parque), Parque Ibirapuera, Hopy Hare,</li>
             <div class="preço">
                 <div class="infos">
                     <a href="#" class="card-button"><p>Preço por Pessoa</p></a>
@@ -413,10 +438,10 @@
             <h2 class="card-title">Florianópolis</h2>
             <p class="card-description">Saídas de São Paulo, Rio de Janeiro e Brasília</p>
             <ul class="card-description"></ul>
-                <li style="margin: 10px;">5 diárias em hotel econômico com café da manhã;</li>
-                <li style="margin: 10px;">Transfer hotel x aeroporto;</li>
-                <li style="margin: 10px;">Passeio de barco pela ria de Huelva + Degustação de camarões</li>
-                <li style="margin: 10px;">City Tour</li>
+                <li style="margin: 10px;" class="card-description">5 diárias em hotel econômico com café da manhã;</li>
+                <li style="margin: 10px;" class="card-description">Transfer hotel x aeroporto;</li>
+                <li style="margin: 10px;" class="card-description">Passeio de barco pela ria de Huelva + Degustação de camarões</li>
+                <li style="margin: 10px;" class="card-description">City Tour</li>
             <div class="preço">
                 <div class="infos">
                     <a href="#" class="card-button"><p>Preço por Pessoa</p></a>
@@ -433,7 +458,7 @@
 <!--INTERNACIONAIS-->
 <div class="card-container">
     <div class="tituloOferta">
-        <h1> Internacionais</h1>
+        <h1>Internacionais</h1>
     </div>
     <div class="card">
         <img src="./img/Internacionais/1° imagem.png" alt="Imagem do Card">
@@ -441,9 +466,9 @@
             <h2 class="card-title">Chile | Santiago, Lagos do Chile e Torres del Paine</h2>
             <p class="card-description">Saídas do Rio de Janeiro, São Paulo e Florianópolis</p>
             <ul class="card-description">Ida e volta</ul>
-                <li style="margin: 10px;">9 diárias em Hotel 4 ou 5 estrelas, com café da manhã;</li>
-                <li style="margin: 10px;">Transfer hotel x aeroporto;</li>
-                <li style="margin: 10px">Almoço em Peulla, almoço navegação Balmaceda e Serrano</li>
+                <li style="margin: 10px;" class="card-description">9 diárias em Hotel 4 ou 5 estrelas, com café da manhã;</li>
+                <li style="margin: 10px;" class="card-description">Transfer hotel x aeroporto;</li>
+                <li style="margin: 10px" class="card-description">Almoço em Peulla, almoço navegação Balmaceda e Serrano</li>
             <div class="preço">
                 <div class="infos">
                     <a href="#" class="card-button"><p>2 pessoas, a partir de</p></a>
@@ -460,9 +485,9 @@
             <h2 class="card-title">EUA | San Francisco, Los Angeles, Chicago e Nova York</h2>
             <p class="card-description">Saídas de São Paulo, Rio de Janeiro, Curitiba e Florianópolis</p>
             <ul class="card-description"></ul>
-                <li style="margin: 10px;">15 Diárias em hotel econômico com café da manhã;</li>
-                <li style="margin: 10px;">Transfer hotel x aeroporto (em todos os destinos);</li>
-                <li style="margin: 10px">City tour com guia em cada uma das cidades;</li>
+                <li style="margin: 10px;" class="card-description">15 Diárias em hotel econômico com café da manhã;</li>
+                <li style="margin: 10px;" class="card-description">Transfer hotel x aeroporto (em todos os destinos);</li>
+                <li style="margin: 10px"  class="card-description">City tour com guia em cada uma das cidades;</li>
             <div class="preço">
                 <div class="infos">
                     <a href="#" class="card-button"><p>2 pessoas, a partir de</p></a>
@@ -479,10 +504,10 @@
             <h2 class="card-title">Tour Europa | 15 dias</h2>
             <p class="card-description">Saídas de São Paulo, Rio de Janeiro, Curitiba e Florianópolis</p>
             <ul class="card-description"></ul>
-                <li style="margin: 10px;">15 diárias em hotel econômico com café da manhã;</li>
-                <li style="margin: 10px;">Transfer hotel x aeroporto (em todos os sentidos);</li>
-                <li style="margin: 10px">Conheça: Paris, Londres, Itália, Portugal e Espanha;</li>
-                <li style="margin: 10px">City tour com guia em cada uma das cidades;</li>
+                <li style="margin: 10px;" class="card-description">15 diárias em hotel econômico com café da manhã;</li>
+                <li style="margin: 10px;" class="card-description">Transfer hotel x aeroporto (em todos os sentidos);</li>
+                <li style="margin: 10px" class="card-description">Conheça: Paris, Londres, Itália, Portugal e Espanha;</li>
+                <li style="margin: 10px" class="card-description">City tour com guia em cada uma das cidades;</li>
             <div class="preço">
                 <div class="infos">
                     <a href="#" class="card-button"><p>Preço por Pessoa</p></a>
@@ -517,4 +542,5 @@
 </footer>
 
 </body>
+<script src="oferta.js"></script>
 </html>
