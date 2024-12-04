@@ -108,8 +108,8 @@ input::placeholder {
         flex-wrap: wrap;
         margin-left: 3%;
         margin-top: 0.1%;
-        }
- 
+    }
+
     .perfil {
         display: none;
     }
@@ -121,7 +121,7 @@ input::placeholder {
     .searchBar {
         padding-bottom: 40%;
     }
-    
+
     .elevador {
         display: none;
     }
@@ -130,8 +130,7 @@ input::placeholder {
         border: none;
         width: 95%;
         height: none;
-
-        }
+    }
 
     #form{
         width: 90%;
@@ -153,6 +152,7 @@ input::placeholder {
         margin-top: 0.5%;
         margin-bottom: 50%;
     }
+
     #left-content{
         border: none;
         width: 95%;
@@ -160,7 +160,7 @@ input::placeholder {
         margin-top: 2%;
         font-size: 140%;
     }
-    
+
     #left-content p {
         width: 90%;
     }

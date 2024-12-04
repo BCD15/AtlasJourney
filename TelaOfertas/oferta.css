@@ -1,52 +1,53 @@
-body{
+body {
     background-color: #55ACE9;
 }
 
-.trianguloa{
-    border-left: 100vw solid var(--cor1);
+.trianguloa {
+    border-left: 98.8vw solid var(--cor1);
     border-top: 100px solid var(--cor5);
-    }
-    .triangulob{
-        border-right: 98.8vw solid var(--cor1);
-        border-bottom: 100px solid var(--cor5);
-    }
-a{
+}
+
+.triangulob {
+    border-right: 98.8vw solid var(--cor1);
+    border-bottom: 100px solid var(--cor5);
+}
+
+a {
     text-decoration: none;
     color: inherit;
 }
-.assineOferta{
+
+.assineOferta {
     background-color: var(--cor4);
     color: var(--cor3);
-    margin-top: 10px;
+    border-top: solid 1px var(--cor3);
     padding: 30px;
     text-align: center;
 }
-input{
+
+.Inputs {
     padding-left: 50px;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid var(--cor5);
-    border-radius: 20px; 
+    border-radius: 20px;
     outline: none;
     transition: border 0.3s;
-    
 }
-button{
 
+button {
     padding: 10px;
     margin: 30px;
     border: none;
     border-radius: 20px;
-    background-color:var(--cor3);
+    background-color: var(--cor3);
     color: var(--cor5);
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.tituloOferta{
-    
+.tituloOferta {
     margin: 70px;
-    /* padding-right: 100px; */
     font-size: 12px;
     color: var(--cor5);
 }
@@ -62,12 +63,11 @@ button{
 
 .card {
     color: var(--cor3);
-    background-color: var(--cor2) ;
+    background-color: var(--cor2);
     border: 1px solid var(--cor2);
     border-radius: 40px;
     width: 300px;
     overflow: hidden;
-    
 }
 
 .card img {
@@ -86,67 +86,78 @@ button{
 
 .card-description {
     font-size: 1em;
-    color:"#A47ADA";
+    color: "#A47ADA";
     margin-bottom: 10px;
 }
+
 .card-button {
     color: black;
 }
-.preço{
+
+.preço {
     border-top: 2px solid var(--cor3);
     border-bottom: 2px solid var(--cor3);
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
 
 }
-.infos{
+
+.infos {
     padding: 7px;
 }
+
 .promocao {
-    display:inline-block;
+    display: inline-block;
     padding: 10px 20px;
-    background-color: #800080; 
+    background-color: #800080;
     color: var(--cor5);
     font-family: Arial, sans-serif;
     font-size: 10px;
     font-weight: bold;
     text-align: center;
-    border-radius: 15px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* sombra */
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     height: 10px;
     align-items: center;
     margin-top: 10px;
-
 }
 
-@media screen and (max-width: 1092px){
-    h1{
+footer {
+    margin-top: 0 !important;
+}
+
+@media screen and (max-width: 1092px) {
+    h1 {
         font-size: 30px;
-        margin-top: 70px; 
+        margin-top: 70px;
         transform: translateX(45px);
     }
-    .tituloOferta{
+
+    .tituloOferta {
         margin: 0;
         width: 100%;
         text-align: center;
 
     }
-    .card-container{
+
+    .card-container {
         display: flex;
         flex-direction: row;
         width: 100%;
         box-sizing: border-box;
     }
-    .card{
+
+    .card {
         width: 60%;
 
     }
-    .card-description{
+
+    .card-description {
         display: none;
     }
-    .botao{
+
+    .botao {
         width: 60%;
     }
 }
-
