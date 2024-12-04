@@ -5,8 +5,9 @@
     --cor4: #BFB8FF;
     --cor5: #FFFFFF;
 }
-.atlas {
-    margin-left: 38%;
+
+header {
+    padding-top: 5%;
 }
 
 body {
@@ -23,10 +24,10 @@ main {
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
-    padding: 30px;
     padding-bottom: 0%;
+    padding-left: 2%;
     box-sizing: border-box;
-    margin-bottom: 90px;
+    margin-bottom: 0px;
     max-width: 100%;
     margin-left: 2%;
 }
@@ -39,10 +40,10 @@ main {
     flex-direction: row;
     width: 30%;
     height:100% ;
+    margin-top: 1%;
     margin-left: 8%;
-    border: #000 solid 2px;
-    border-bottom: #9e9e9e solid 3px;
-    box-shadow: #000 3px;
+    border: #000 solid 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
 }
 
 .left-content {
@@ -59,26 +60,17 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    border: #000 solid 1px;
+    box-shadow: 0 4px 6px rgba (0, 0, 0, 0.3);
+
     }
 
-footer {
-    background-color: var(--cor2);
-    color: var(--cor3);
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    box-sizing: border-box;
-}
 .popup {
     background-color: #BFB8FF;
     color: #A47ADA;
     border-radius: 17px;
-    width: 300px;
-    height: 50px;
+    width: 65%;
+    height: 8%;
     margin-left: 17%;
     font-weight: bold;
     font-size: larger;
@@ -86,6 +78,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
+    border: none;
 }
 
 .split-list {
@@ -105,37 +98,50 @@ footer {
 @media screen and (max-width: 425px) {
     main {
         display: flex;
-        flex-direction: column; /* Organiza os elementos verticalmente */
+        flex-direction: column;
         flex-wrap: nowrap;
-        width: 100%;
-        height: auto; /* Ajusta para altura dinâmica */
+        width: 95%;
+        height: auto;
         padding: 0;
         box-sizing: border-box;
-        margin-bottom: 90px;
+        margin-bottom: 0px;
         max-width: 100%;
-        margin-left: 0;
+        margin-left: 1px;
     }
 
-    .left-content {
-        display: none;
+    .left-content, .right-content {
+        display: none;  
     }
 
-    .right-content {
-        display: none;
-    }
     .mobile-content{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         background-color: var(--cor2);
         justify-content: center;
-        margin-left: 5%;
+        margin-left: 4%;
         border-radius: 20px;
         margin-top: 5%;
+        padding-bottom: 10%;
     }
     .popup{
-        margin-top: 10%;
+        margin-top: 5%;
         margin-right: 16%;
+        border: none;
     }
+    header{
+        padding-top: 35%;
+    }
+}
 
+@media screen and (max-width: 1366px){
+    .left-content{
+        margin-left: 0%;
+    }
+    header{
+        padding-top: 15%;
+    }
+    #texto-direita{
+        margin-left: 0%;        
+    }
 }

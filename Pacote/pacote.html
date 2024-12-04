@@ -11,9 +11,34 @@
     <title>Pacote</title>
 </head>
 <body>
+    <div class="mh sla dispNone">
+        <div class="mh menu dispNone">
+            <ul class="mh menuLista dispNone">
+                <li class="mh itemMenuLista dispNone">
+                    Home
+                </li>
+                <li class="mh itemMenuLista dispNone">
+                    Ofertas
+                </li>
+                <li class="mh itemMenuLista dispNone">
+                    Personalize
+                </li>
+                <li class="mh itemMenuLista dispNone">
+                    Quem Somos?
+                </li>
+                <li class="mh itemMenuLista dispNone">
+                    Contato
+                </li>
+                <li class="mh itemMenuLista dispNone">
+                    Login
+                </li>
+            </ul>
+        </div>
+        <div class="mh backgroundMenu dispNone" onclick="menuHamburgOpen()"></div>
+    </div>
     <header>
         <div class="cabeça">
-            <img id="menu" class="perfil" src="./Images/menuIcon.png" alt="logo" />
+            <img id="menuIcon" class="perfil" src="./Images/menuIcon.png" alt="logo" onclick="menuHamburgOpen()"/>
             <img class="atlas" src="./Images/Logo.png" alt="Nome" />
             <img class="perfil" src="./Images/Login icon.png" alt="logo" />
         </div>
@@ -30,11 +55,11 @@
                 <img class="lupa" src="./Images/lupa 1.png" alt="lupa" />
             </div>
         </div>
-    </header>   
+    </header>
     <main>
         <div class="left-content">
-            <h2 style="color: #A47ADA; margin-bottom: 20px; margin-left: 25%;">Rio de Janeiro, a cidade maravilhosa!</h2>
-            <img src="Images/Rio-de-janeiro1.png"   alt=""  style="height: 375px; width: 700px; border-radius: 30px; margin-left: 5%;"/>
+            <h2 style="color: #A47ADA; margin-left: 25%;  padding-top: 1%; padding-bottom: 1%;">Rio de Janeiro, a cidade maravilhosa!</h2>
+            <img src="Images/Rio-de-janeiro1.png"   alt=""  style="height: auto; width: 104%; border-radius: 30px; margin-left: 0%;"/>
             <div class="bottom-content">
                 <ul class=";"> 
                 <h2 style="color: #A47ADA; margin-left: 30%; font-weight: bold;">4 dias no RJ: O que fazer?</h2>
@@ -50,42 +75,45 @@
         <div class="right-content">
             <h2 style="color: #A47ADA; font-size: 30px; font-weight: bold; margin-left: 26%; margin-top: 10%; font-weight: bold;">Oferta!  |  4 dias</h2>
             <ul class="texto-direita">
-                <li style="color: #BFB8FF; font-size: 22px; width: 300px; margin-left: 22%; text-align: center; padding-bottom: 2px;">Diárias em hotel 4 ou 5 estrelas, com café da manhã;</li>
-                <li style="color: #BFB8FF; font-size: 22px; margin-left: 22%; margin-bottom: 10px; text-align: center; padding-left: 4%;">Transfer hotel x aeroporto;</li>
-                <li style="color: #BFB8FF; font-size: 22px; margin-left: 22%; margin-bottom: 5px;text-align: center;">City tour;</li>
-                <li style="color: #BFB8FF; font-size: 22px; margin-left: 22%; margin-bottom: 5px; text-align: center; padding-left: 6%;">Passeios: bondinho e pão de açúcar</li>
-                <li style="color: #BFB8FF; font-size: 22px; margin-left: 22%; padding-left: 10%;">Pacote para 2 pessoas</li>            
+                <li style="color: #BFB8FF; font-size: 22px; width: 300px; margin-left: 22%; text-align: center; padding-bottom: 6px;">Diárias em hotel 4 ou 5 estrelas, com café da manhã;</li>
+                <li style="color: #BFB8FF; font-size: 22px; margin-left: 22%; text-align: center; padding-left: 4%; padding-bottom: 6px;">Transfer hotel x aeroporto;</li>
+                <li style="color: #BFB8FF; font-size: 22px; margin-left: 22%; padding-bottom: 6px;text-align: center;">City tour;</li>
+                <li style="color: #BFB8FF; font-size: 22px; margin-left: 22%; padding-bottom: 5px; text-align: center; padding-left: 6%;">Passeios: bondinho e pão de açúcar</li>
+                <li style="color: #BFB8FF; font-size: 22px; margin-left: 22%; padding-left: 10%; padding-bottom: 5px;">Pacote para 2 pessoas</li>            
                 <li style="color: #A47ADA; font-size:  28px; font-weight: bold; margin-top: 10%; margin-bottom: -5%; margin-left: 19%; list-style: none;;"> A partir de R$3990,90</h1>
             </ul>
             <button class="popup" ><p id="txtbtn">Assinar pacote</p><img src="Images/right-arrow 1.png";/></button>
             </div>
             <div class="mobile-content">
-                <h2 style="color: #A47ADA; margin-bottom: 20px; margin-left: 25%;">Rio de Janeiro, a cidade maravilhosa!</h2>
-                <img src="Images/Rio-de-janeiro1.png"   alt=""  style="height: auto; width: 425px; border-radius: 30px; margin-left: 5%;"/>
+                <h2 style="color: #A47ADA; margin-left: 0%; text-align: center; ">Rio de Janeiro, a cidade maravilhosa!</h2>
+                <img src="Images/Rio-de-janeiro1.png"   alt=""  style="height: auto; width: 340px; border-radius: 30px;"/>
+            <h2 style="color: #A47ADA; font-size: 30px; font-weight: bold; margin-top: 5%; font-weight: bold; padding-bottom: 5%;">Oferta!  |  4 dias</h2>
                 <ul class="texto-direita">
-                    <li style="color: #BFB8FF; font-size: 18px; width: 300px; margin-left: 10%; text-align: center; padding-bottom: 2px;">Diárias em hotel 4 ou 5 estrelas, com café da manhã;</li>
-                    <li style="color: #BFB8FF; font-size: 18px; margin-bottom: 10px; text-align: center; margin-left: 10%;">Transfer hotel x aeroporto;</li>
-                    <li style="color: #BFB8FF; font-size: 18px; margin-left: 10%; margin-bottom: 5px;text-align: center;">City tour;</li>
-                    <li style="color: #BFB8FF; font-size: 18px; margin-left: 10%; margin-bottom: 5px; text-align: center; padding-left: 6%;">Passeios: bondinho e pão de açúcar</li>
-                    <li style="color: #BFB8FF; font-size: 18px; margin-left: 10%; padding-left: 10%;">Pacote para 2 pessoas</li>            
-                    <li style="color: #A47ADA; font-size: 22px; font-weight: bold; margin-top: 10%; margin-bottom: -5%; margin-left: 10%; list-style: none;;"> A partir de R$3990,90</h1>
+                    <li style="color: #BFB8FF; font-size: 18px; width: 300px; text-align: left; padding-bottom: 2px;">Diárias em hotel 4 ou 5 estrelas, com café da manhã;</li>
+                    <li style="color: #BFB8FF; font-size: 18px; margin-bottom: 10px; text-align: left;">Transfer hotel x aeroporto;</li>
+                    <li style="color: #BFB8FF; font-size: 18px; margin-bottom: 5px;text-align: left;">City tour;</li>
+                    <li style="color: #BFB8FF; font-size: 18px; margin-bottom: 5px; text-align: left; padding-left: 0%;">Passeios: bondinho e pão de açúcar</li>
+                    <li style="color: #BFB8FF; font-size: 18px; padding-left: 0%; text-align: left;">Pacote para 2 pessoas</li>            
+                    <li style="color: #A47ADA; font-size: 22px; font-weight: bold;margin-top: 10%; margin-bottom: -5%; margin-left: 10%; list-style: none;;"> A partir de R$3990,90</h1>
                 </ul>
-                <button class="popup" ><p id="txtbtn">Assinar pacote</p><img src="Images/right-arrow 1.png";/></button>                
+                <button class="popup" ><p id="txtbtn">Assinar Pacote</p><img src="Images/right-arrow 1.png";/></button>    
+
             </div>
     </main>
     <footer>
-        <div style="display: flex; flex-direction: row; width: 11%; margin-top: 9px">
-            <img src="images/instagram (1) 1.png" alt="" width="30px" height="30px" style="margin-right: 10px" />
-            <img src="images/facebook 1.png" alt="" width="30px" height="30px" />
+        <div id="socialMediaIcons" style="display: flex; flex-direction: row; width: 11%; margin-top: 9px;">
+            <img src="Images/instagram (1) 1.png" alt="" width="30px" height="30px" style="margin-right: 10px;">
+            <img id="facebookIcon" src="Images/facebook 1.png" alt="" width="30px" height="30px">
         </div>
-        <div style=" display: flex; flex-direction: row; width: 78%; justify-content: center;">
-            <p style="font-size: medium; font-weight: bold">
-                ₢ Desenvolvido por "nome do time"
-            </p>
+        <div style="display: flex; flex-direction: row; width: 78%; justify-content: center;">
+            <p id="direitos">₢ AtlasJourney</p>
         </div>
-        <div style=" display: flex; flex-direction: row; width: 11%; justify-content: space-evenly; margin-top: 7px;">
-            <img src="images/telefone 1.png" alt="" width="30px" height="30px" />
-            <p style="font-size: small; font-weight: 700">+55 47 99999999</p>
+        <div style="display: flex; flex-direction: row; width: 11%; justify-content: space-evenly; margin-top: 7px;">
+            <picture>
+                <source srcset="Images/facebook 1.png" media="(max-width: 1092px)">
+                <img src="images/telefone 1.png" alt="" width="30px" height="30px">
+            </picture>
+            <p id="telefone-number" >+55 47 99999-9999</p>
         </div>
     </footer>
 </body>
