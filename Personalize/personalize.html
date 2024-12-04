@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="personalize.css">
+    <link rel="stylesheet" href="../componentsStyle/index.css">
+    <link rel="stylesheet" href="../componentsStyle/header.css">
+    <link rel="stylesheet" href="../componentsStyle/footer.css">
+    <script src="personalize.js"></script>
 </head>
 <main>
-<body>
-
-    
+<body>    
     <header>
         <div class="cabeça">
             <img id="menu" class="perfil" src="./Images/menuIcon.png" alt="logo" />
@@ -29,51 +31,51 @@
                 <img class="lupa" src="./Images/lupa 1.png" alt="lupa" />
             </div>
         </div>
-    </header>
+    </header>   
+    <div class="margincima"><br></div>
     <div id="msg">
         <h1>MONTE SUA VIAJEM</h1>
         <P>Escolha entre opções de voos, destino e mais!!</P>
     </div>
  <div id="trianguloa" ></div>
  <div class="cardleft">
-    <p>Partida </p>
+    <p style="text-align: center;">Partida </p>
     <hr>
-    <p style="margin: 30px 0px 0px;">Destino </p>
+    <p style="margin: 30px 0px 0px; text-align: center;">Destino </p>
     <hr>
-    <input class="input1" style="margin: 30px 0px 30px;" type="search" name="preço min" id="precomin"  placeholder="preço min" >
-    <input class="input1" style="margin: 0px 0px 30px;" type="search" name="preço max" id="precomin" placeholder="Preço max">
-    <input class="input1" style="margin: 0px 0px 30px;" type="search" name="preço max" id="transporte" placeholder="Transporte">
-    <p>Data </p>
+    <input class="input1" style="margin: 30px 0px 30px; width: 100%; color: #A47ADA;" type="search" name="preço min" id="precomin"  placeholder="Preço min" >
+    <input class="input1" style="margin: 0px 0px 30px; width: 100%; color: #A47ADA;" type="search" name="preço max" id="precomin" placeholder="Preço max">
+    <input class="input1" style="margin: 0px 0px 30px; width: 100%; color: #A47ADA;" type="search" name="preço max" id="transporte" placeholder="Transporte">
+    <p style="text-align: center;">Data </p>
     <hr>
-    <input class="input1" style="margin: 35px 0px 30px;" type="search" name="empresa" id="Empresa" placeholder="Empresa">
-    <input  class="input1" style="margin: 0px 0px 35px;" type="search" name="local" id="local" placeholder="Local">
-    
+    <input class="input1" style="margin: 35px 0px 30px; width: 100%; color: #A47ADA;" type="search" name="empresa" id="Empresa" placeholder="Empresa">
+    <input  class="input1" style="margin: 0px 0px 35px; width: 100%; color: #A47ADA;" type="search" name="local" id="local" placeholder="Local">   
  </div>
         <div class="back"></div>
+        <p style="font-size: xx-large; font-weight: bold; text-align: center; color: #ffffff; margin-left: 14%;">Selecione o destino</p>
         <div class="geral">
             <div class="container" >
+                <!-- caribe -->
                 <div class=" card">
-                    <div class="img">
-                        <img class="img" src="personalize img/image.png" alt="Praia">
-                    </div>
-                    
                     <div class="content">
+                        <div class="img">
+                            <img class="img" src="personalize img/image.png" alt="Praia">
+                        </div>
                         <p class="p1">Caribe</p>
+                        </div>
                     </div>
-                   
-                    
-                </div>
-                <!-- segundo card-->
+
+                    <!-- frança -->
                     <div class=" card">
                         <div class="img">
-                            <img class="img" src="personalize img/image (1).png" alt="Campo">
+                            <img class="img" src="personalize img/image (1).png" alt="frança">
                         </div>
-                      
                         <div class="content">
                             <p class="p1">França</p>
                         </div>
                     </div>
-                     <!-- terceiro card -->
+
+                     <!-- noronha -->
                         <div class=" card">
                             <div class="img">
                                 <img class="img" src="personalize img/image (2).png" alt="Aventura">
@@ -83,17 +85,17 @@
                                 <p class="p1">Noronha</p>
                             </div>
                         </div>
-                     <!-- quarto card -->
+                     <!-- rio -->
                         <div class=" card">
                             <div class="img">
                                 <img class="img" src="personalize img/image (6).png" alt="Nacionais">
                             </div>
                           
                             <div class="content">
-                                <p class="p1">Rio de janeiro</p>
+                                <p class="p1">Rio de Janeiro</p>
                             </div>
                         </div>
-                        <!-- quinto card -->
+                        <!-- las -->
                         <div class=" card">
                             <div class="img">
                                 <img class="img" src="personalize img/image (4).png" alt="Internacionais">
@@ -103,7 +105,7 @@
                                 <p class="p1">Las Vegas</p>
                             </div>
                         </div>
-                        <!-- sexto card -->
+                        <!-- dubai -->
                         <div class=" card">
                             <div class="img">
                                 <img class="img" src="personalize img/image (5).png" alt="Internacionais">
@@ -115,8 +117,7 @@
                         </div>          
             </div>     
         </div>
-       
-        <div id="trans"> Selecione seu transporte</div>
+        <div id="trans" style="font-weight: bold;"> Selecione seu transporte</div>
         <div class="geral">
             <div class="container">
                 <div class=" card">
@@ -160,10 +161,7 @@
                 </div>
             </div>
         </div>
-        
-       
-              
-        <div id="hospedagem">Selecione sua hospedagem</div>
+        <div id="hospedagem" style="font-weight: bold;">Selecione sua hospedagem</div>
 
         <div class="geral">
             <div class="container">
