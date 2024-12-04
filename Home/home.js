@@ -36,3 +36,36 @@ function RenderCard(item) {
 }
 
 GetCardItem();
+
+
+let currentIndex = 0;
+
+function showSlide(index) {
+  const slides = document.querySelectorAll('.slide');
+  const totalSlides = slides.length;
+  
+  if (index >= totalSlides) {
+    currentIndex = 0;
+  } else if (index < 0) {
+    currentIndex = totalSlides - 1;
+  } else {
+    currentIndex = index;
+  }
+
+  const carousel = document.querySelector('.carousel');
+  carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+function nextSlide() {
+  showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+  showSlide(currentIndex - 1);
+}
+
+// Inicializa o carrossel
+showSlide(currentIndex);
+
+const slides = document.querySelectorAll('.slide');
+console.log(slides); // Verificar se todas as slides estão sendo identificadas
